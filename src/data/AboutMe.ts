@@ -30,5 +30,5 @@ export const aboutMeData = {
     { label: "Prototype", variant: "tagLight", pos: "tag7" },
   ],
 
-  image: "/portrait1.png",
+  image: "/pngs/portrait1.png",
 };

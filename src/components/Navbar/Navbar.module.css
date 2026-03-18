@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Navbar styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 17/03/2026
+ * Last Modified: 18/03/2026
  */
 
 .navWrapper {
@@ -43,7 +43,7 @@
 
 .scrolled .navContainer {
   max-width: 720px;
-  background: rgba(250, 247, 242, 0.92);
+  background: rgba(250, 247, 242, 0.62);
   backdrop-filter: blur(16px);
   padding: 8px 12px 8px 24px;
   border-radius: 999px;

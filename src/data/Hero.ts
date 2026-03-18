@@ -24,7 +24,7 @@ export const heroData = {
   },
 
   image: {
-    src: "/portrait1.png",
+    src: "/pngs/portrait1.png",
     alt: "John Doe - Product Designer",
   },
 };
