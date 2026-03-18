@@ -1,0 +1,66 @@
+/*
+ * File: src/components/HomePage/HeroSection/Marquee.module.css
+ * Author: Harshita Gawas
+ * Description: Marquee styles for the Portfolio application.
+ * Created on: 15/03/2026
+ * Last Modified: 18/03/2026
+ */
+
+.bannerWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.greenStrip {
+  position: absolute;
+  top: -20px;
+  left: -5%;
+  width: 110%;
+  height: 50px;
+  background: var(--cta-primary);
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+
+.yellowBar {
+  position: relative;
+  z-index: 2;
+  background: var(--highlight);
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 0;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--heading-color);
+  white-space: nowrap;
+  padding: 0 32px;
+  letter-spacing: -0.01em;
+}
+
+.star {
+  color: var(--cta-primary);
+  font-size: 1.2em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

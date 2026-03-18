@@ -1,0 +1,184 @@
+/*
+ * File: src/components/HomePage/HeroSection/Hero.module.css
+ * Author: Harshita Gawas
+ * Description: Hero section styles for the Portfolio application.
+ * Created on: 15/03/2026
+ * Last Modified: 18/03/2026
+ */
+.heroSection {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  background: var(--page-background);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.nameHighlight {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--highlight);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-color);
+  max-width: 42ch;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.primaryBtn {
+  background: var(--cta-primary);
+  color: var(--page-background);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 150ms ease,
+    box-shadow 200ms ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(29, 46, 44, 0.3);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: var(--heading-color);
+  border: 1.5px solid var(--heading-color);
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.secondaryBtn:hover {
+  background: var(--heading-color);
+  color: var(--page-background);
+}
+
+/* Right Visual */
+
+.visualArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.yellowCircle {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: var(--highlight);
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -55%);
+  z-index: 1;
+}
+
+.portraitWrapper {
+  position: relative;
+  z-index: 10;
+  width: 380px;
+  height: 480px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Hire Badge */
+
+.hireBadge {
+  position: absolute;
+  right: 8%;
+  top: 15%;
+  z-index: 20;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px dashed var(--cta-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 8s linear infinite;
+}
+
+.hireBadgeInner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cta-primary);
+  animation: spinReverse 8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}

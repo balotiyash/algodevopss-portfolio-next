@@ -1,1 +1,85 @@
+/*
+ * File: src/app/globals.css
+ * Author: Harshita Gawas
+ * Description: Global styles for the Portfolio application.
+ * Created on: 15/03/2026
+ */
 
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/fonts/HankenGrotesk.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/fonts/HankenGrotesk-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/BricolageGrotesque.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --font-body: "Hanken Grotesk";
+  --font-heading: "Bricolage Grotesque";
+
+  /* Page Background */
+  --page-background: #faf7f2;
+
+  /* Navbar / Cards / Sections */
+  --section-background: #f2ebe0;
+
+  /* Primary Buttons / CTAs */
+  --cta-primary: #1d2e2c;
+
+  /* Your Name / Highlights */
+  --highlight: #c4522a;
+
+  /* Links / Secondary CTAs */
+  --cta-secondary: #1e6b63;
+
+  /* Headings */
+  --heading-color: #2a1f18;
+
+  /* Body Text */
+  --text-color: #7a6e62;
+
+  /* Borders / Dividers */
+  --border-color: #d9cebe;
+
+  /* Footer / Dark Sections */
+  --footer-background: #1d2e2c;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-color: var(--page-background);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: var(--font-heading), sans-serif;
+}
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
