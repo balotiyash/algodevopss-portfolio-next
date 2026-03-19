@@ -3,6 +3,7 @@
  * Author: Harshita Gawas
  * Description: Technologies section of the Portfolio application.
  * Created on: 18/03/2026
+ * Last Modified: 19/03/2026
 
  */
 
@@ -43,7 +44,7 @@ export const Technologies = () => {
   const perimeter = getEllipsePerimeter(rx, ry);
 
   return (
-    <section className={styles.section} ref={sectionRef}>
+    <section id="technologies" className={styles.section} ref={sectionRef}>
       {/* Section header */}
       <p className={styles.subtitle}>Technologies I Work With</p>
       <h2 className={styles.heading}>

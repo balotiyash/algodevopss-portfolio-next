@@ -3,10 +3,12 @@
  * Author: Harshita Gawas
  * Description: Layout for the Portfolio application.
  * Created on: 15/03/2026
+ * Last Modified: 19/03/2026
  */
 import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar/Navbar";
 import "./globals.css";
+import { SideIcons } from "@/components/SideIcons/SideIcons";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        <SideIcons />
         {children}
       </body>
     </html>

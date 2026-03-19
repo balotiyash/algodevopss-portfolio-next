@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Hero section for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 18/03/2026
+ * Last Modified: 19/03/2026
  */
 
 import React from "react";
@@ -15,6 +15,7 @@ import { heroData } from "@/data/Hero";
 export const Hero: React.FC = () => {
   return (
     <section
+      id="home"
       className={`${styles.heroSection} ${responsiveStyles.heroSection}`}
     >
       <div className={`${styles.container} ${responsiveStyles.container}`}>

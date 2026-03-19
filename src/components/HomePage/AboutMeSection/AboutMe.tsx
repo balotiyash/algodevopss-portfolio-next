@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: About Me section  for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 17/03/2026
+ * Last Modified: 19/03/2026
  */
 
 import Image from "next/image";
@@ -13,7 +13,7 @@ import { aboutMeData } from "@/data/AboutMe";
 
 export const AboutMe = () => {
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={`${styles.container} ${responsiveStyles.container}`}>
         {/* Left: Portrait with floating skill tags */}
         <div className={`${styles.imageCol} ${responsiveStyles.imageCol}`}>

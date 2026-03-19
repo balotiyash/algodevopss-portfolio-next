@@ -3,12 +3,13 @@
  * Author: Harshita Gawas
  * Description: Main page for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 18/03/2026
+ * Last Modified: 19/03/2026
  */
 
 import { AboutMe } from "@/components/HomePage/AboutMeSection/AboutMe";
 import { Hero } from "@/components/HomePage/HeroSection/Hero";
 import { Marquee } from "@/components/HomePage/HeroSection/Marquee";
+import { Projects } from "@/components/HomePage/ProjectSection/Projects";
 import { Technologies } from "@/components/HomePage/Technologies/Technologies";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Marquee />
       <AboutMe />
       <Technologies />
+      <Projects />
     </main>
   );
 }

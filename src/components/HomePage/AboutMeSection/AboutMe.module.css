@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: About Me section styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 17/03/2026
+ * Last Modified: 19/03/2026
  */
 
 /* ─── About Me Section ─── */
@@ -160,11 +160,13 @@
   align-items: center;
   gap: 0.5rem;
 }
-
+/* Small dash before subtitle */
 .dash {
-  width: 1.5rem;
-  height: 1px;
+  content: "";
+  width: 12px;
+  height: 2px;
   background-color: var(--border-color);
+  display: inline-block;
 }
 
 /* Main heading */
