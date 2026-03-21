@@ -38,8 +38,8 @@ export const Navbar: React.FC = () => {
         className={`${styles.navContainer} ${responsiveStyles.navContainer}`}
       >
         <div className={styles.logoArea}>
-          <div className={styles.logoIcon}>P</div>
-          <span className={styles.logoText}>Portfolio</span>
+          {/* <div className={styles.logoIcon}>H</div> */}
+          <span className={styles.logoText}>John Doe</span>
         </div>
 
         {/* <div className={styles.links}>

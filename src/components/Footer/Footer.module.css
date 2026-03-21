@@ -1,0 +1,202 @@
+/*
+ * File: src/components/HomePage/Footer/Footer.module.css
+ * Author: Harshita Gawas
+ * Description: Styles for the Footer component of the Portfolio application.
+ * Created on: 20/03/2026
+ * Last Modified: 21/03/2026
+ */
+
+/* ─── Footer wrapper — dark teal bg ─── */
+.footer {
+  background: var(--cta-primary);
+  padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 80px) 0;
+}
+
+/* ─── Top divider line ─── */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--text-color);
+  margin-bottom: clamp(40px, 5vw, 64px);
+}
+
+/* ─── 4-column grid ─── */
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: clamp(24px, 4vw, 48px);
+  padding-bottom: clamp(40px, 5vw, 64px);
+}
+
+/* ─── Brand column ─── */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+
+.brandDesc {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+  color: var(--border-color);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 300px;
+  font-style: italic;
+}
+
+/* ─── Social icons row ─── */
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.socialIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--highlight);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 6px 20px var(--highlight),
+    0.35;
+}
+
+.socialIcon:active {
+  transform: scale(0.96);
+}
+
+/* ─── Column shared styles ─── */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.colTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  font-weight: 700;
+  color: var(--highlight);
+  margin: 0 0 12px;
+}
+
+/* ─── Nav / info link list ─── */
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.2vw, 0.92rem);
+  color: var(--border-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+/* ─── Connect column links ─── */
+.connectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.connectLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 1.2vw, 0.9rem);
+  color: var(--border-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.5;
+}
+
+.connectLink svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.connectLink:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+/* ─── Bottom bar ─── */
+.bottom {
+  border-top: 1px solid var(--text-color);
+  padding: clamp(16px, 2.5vw, 24px) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.copyright {
+  font-family: var(--font-body);
+  font-size: clamp(0.72rem, 1.1vw, 0.85rem);
+  color: var(--border-color);
+  margin: 0;
+}
+
+.copyrightName {
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+/* ─── Tablet — 2×2 grid ─── */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(28px, 4vw, 40px);
+  }
+}
+/* ─── Mobile — single column ─── */
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* ─── Very small screens ─── */
+@media (max-width: 400px) {
+  .footer {
+    padding: 40px 16px 0;
+  }
+}

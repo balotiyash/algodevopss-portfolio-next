@@ -1,3 +1,11 @@
+/*
+ * File: src/components/HomePage/HeroSection/Responsiveness.module.css
+ * Author: Harshita Gawas
+ * Description: Hero section responsiveness styles for the Portfolio application.
+ * Created on: 15/03/2026
+ * Last Modified: 21/03/2026
+ */
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 1024px) {
@@ -118,5 +126,20 @@
   .hireBadgeInner {
     width: 25px;
     height: 25px;
+  }
+}
+@media (max-height: 800px) {
+  .heroSection {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .portraitWrapper {
+    max-width: 280px;
+  }
+
+  .yellowCircle {
+    width: 240px;
+    height: 240px;
   }
 }

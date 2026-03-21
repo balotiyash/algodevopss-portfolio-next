@@ -3,18 +3,33 @@
  * Author: Harshita Gawas
  * Description: Side icons compoenent of the Portfolio application.
  * Created on: 19/03/2026
+ * Last Modified: 21/03/2026
  */
 "use client";
 
 import React, { useState, useEffect } from "react";
+import {
+  FaBriefcase,
+  FaFolderOpen,
+  FaLaptopCode,
+  FaHouse,
+  FaUser,
+} from "react-icons/fa6";
 import styles from "./SideIcons.module.css";
 
+type Section = {
+  id: string;
+  label: string;
+  icon: React.ReactNode;
+};
+
 /* Section definitions — id must match the section's HTML id */
-const sections = [
-  { id: "home", label: "Intro", icon: "🏠" },
-  { id: "about", label: "About", icon: "👤" },
-  { id: "technologies", label: "Tech", icon: "⚙️" },
-  { id: "projects", label: "Projects", icon: "📁" },
+const sections: Section[] = [
+  { id: "home", label: "Intro", icon: <FaHouse /> },
+  { id: "about", label: "About", icon: <FaUser /> },
+  { id: "technologies", label: "Tech", icon: <FaLaptopCode /> },
+  { id: "projects", label: "Projects", icon: <FaFolderOpen /> },
+  { id: "experience", label: "Experience", icon: <FaBriefcase /> },
 ];
 
 export const SideIcons: React.FC = () => {

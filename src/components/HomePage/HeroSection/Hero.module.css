@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Hero section styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 18/03/2026
+ * Last Modified: 21/03/2026
  */
 .heroSection {
   min-height: 80svh;
@@ -109,7 +109,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
+  min-height: auto;
 }
 
 .yellowCircle {
@@ -127,19 +127,18 @@
 .portraitWrapper {
   position: relative;
   z-index: 10;
-  width: 380px;
-  height: 480px;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 3 / 4;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  overflow: hidden;
 }
 
 .portrait {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
 }
 
 /* Hire Badge */

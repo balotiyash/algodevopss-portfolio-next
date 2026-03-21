@@ -3,6 +3,7 @@
  * Author: Harshita Gawas
  * Description: Project section styles of the Portfolio application.
  * Created on: 19/03/2026
+ * Last Modified: 21/03/2026
  */
 
 /* ─── Projects section wrapper ─── */
@@ -98,6 +99,9 @@
   color: #1a1a1a;
 }
 
+.viewAll:hover {
+  transform: translateY(-2px);
+}
 /* ─── Card grid — 2 columns ─── */
 .grid {
   display: grid;
