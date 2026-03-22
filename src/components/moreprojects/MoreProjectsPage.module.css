@@ -1,0 +1,186 @@
+/* Main page container with desktop spacing. */
+.page {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 130px 24px 80px;
+}
+
+.title {
+  margin: 0 0 36px;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--heading-color);
+  line-height: 1.15;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Alternating two-column project card row. */
+.projectRow {
+  display: grid;
+  grid-template-columns: minmax(280px, 44%) 1fr;
+  gap: 30px;
+  align-items: center;
+  background: var(--section-background);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+/* Reversed row order for alternate cards. */
+.reverse {
+  grid-template-columns: 1fr minmax(280px, 44%);
+}
+
+.reverse .imageWrap {
+  order: 2;
+}
+
+.reverse .content {
+  order: 1;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #e7ddcf;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.projectTitle {
+  margin: 0;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+  color: var(--heading-color);
+}
+
+.description {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  color: var(--text-color);
+  line-height: 1.65;
+}
+
+.techLabel {
+  margin: 0;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 0.95rem;
+  color: var(--heading-color);
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techItem {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--cta-primary);
+  color: #fff;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.linkButton:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.github {
+  background: #1d2e2c;
+  color: #fff;
+}
+
+.live {
+  background: #c4522a;
+  color: #fff;
+}
+
+.pagination {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  min-width: 38px;
+  height: 38px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--heading-color);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pageButton[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: var(--cta-primary);
+  color: #fff;
+  border-color: var(--cta-primary);
+}
+
+/* Responsive stack layout for mobile/tablet. */
+@media (max-width: 900px) {
+  .projectRow,
+  .reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse .imageWrap,
+  .reverse .content {
+    order: initial;
+  }
+
+  .page {
+    padding: 110px 18px 60px;
+  }
+}

@@ -13,8 +13,9 @@ type RouteLayoutProps = {
 export function RouteLayout({ children }: RouteLayoutProps) {
   const pathname = usePathname();
   const isResumeRoute = pathname.startsWith("/resume");
+  const isProjectsRoute = pathname.startsWith("/projects");
 
-  if (isResumeRoute) {
+  if (isResumeRoute || isProjectsRoute) {
     return <>{children}</>;
   }
 

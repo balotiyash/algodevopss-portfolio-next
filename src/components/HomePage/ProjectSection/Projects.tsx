@@ -8,6 +8,7 @@
 /* Projects grid section – "My Latest Projects" */
 
 import Image from "next/image";
+import Link from "next/link";
 import { projects } from "@/data/Projects";
 import styles from "./Projects.module.css";
 
@@ -29,7 +30,7 @@ export const Projects = () => {
           </div>
 
           {/* View all button */}
-          <button className={styles.viewAll}>
+          <Link href="/projects" className={styles.viewAll}>
             <span className="view-btn">View All Projects</span>
             {/* Arrow circle icon */}
             <span className={styles.arrowCircle}>
@@ -43,7 +44,7 @@ export const Projects = () => {
                 />
               </svg>
             </span>
-          </button>
+          </Link>
         </div>
 
         {/* 2×2 project card grid */}
