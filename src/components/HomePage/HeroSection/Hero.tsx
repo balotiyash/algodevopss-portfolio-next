@@ -11,6 +11,7 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import responsiveStyles from "./Responsiveness.module.css";
 import { heroData } from "@/data/Hero";
+import Link from "next/link";
 
 export const Hero: React.FC = () => {
   return (
@@ -38,13 +39,13 @@ export const Hero: React.FC = () => {
 
           {/* Action buttons */}
           <div className={`${styles.actions} ${responsiveStyles.actions}`}>
-            <a href={heroData.ctaPrimary.link}>
+            <Link href={heroData.ctaPrimary.link}>
               <button
                 className={`${styles.primaryBtn} ${responsiveStyles.primaryBtn}`}
               >
                 {heroData.ctaPrimary.text}
               </button>
-            </a>
+            </Link>
 
             <a href={heroData.ctaSecondary.link}>
               <button

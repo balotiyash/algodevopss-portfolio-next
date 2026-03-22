@@ -10,6 +10,7 @@
 import React, { useState, useEffect } from "react";
 import {
   FaBriefcase,
+  // FaEnvelope,
   FaFolderOpen,
   FaLaptopCode,
   FaHouse,
@@ -30,10 +31,25 @@ const sections: Section[] = [
   { id: "technologies", label: "Tech", icon: <FaLaptopCode /> },
   { id: "projects", label: "Projects", icon: <FaFolderOpen /> },
   { id: "experience", label: "Experience", icon: <FaBriefcase /> },
+  // { id: "contact", label: "Contact", icon: <FaEnvelope /> },
 ];
 
 export const SideIcons: React.FC = () => {
   const [activeId, setActiveId] = useState("home");
+
+  useEffect(() => {
+    const syncFromHash = () => {
+      const hashId = window.location.hash.replace("#", "");
+      if (hashId && sections.some((section) => section.id === hashId)) {
+        setActiveId(hashId);
+      }
+    };
+
+    syncFromHash();
+    window.addEventListener("hashchange", syncFromHash);
+
+    return () => window.removeEventListener("hashchange", syncFromHash);
+  }, []);
 
   /* Track active section based on viewport visibility */
   useEffect(() => {

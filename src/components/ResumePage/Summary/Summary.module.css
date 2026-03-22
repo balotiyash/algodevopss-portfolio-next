@@ -1,0 +1,26 @@
+/* ─── Professional Summary — ATS style ─── */
+.section {
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+/* Section heading — bold with underline */
+.heading {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+  margin: 0 0 12px;
+}
+
+/* Summary paragraph */
+.text {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: #222;
+  line-height: 1.7;
+  margin: 0;
+}

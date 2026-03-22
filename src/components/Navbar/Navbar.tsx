@@ -10,6 +10,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import responsiveStyles from "./Responsiveness.module.css";
+import Link from "next/link";
 
 // const navLinks = [
 //   // "Home",
@@ -53,10 +54,11 @@ export const Navbar: React.FC = () => {
             </a>
           ))}
         </div> */}
-
-        <button className={`${styles.cta} ${responsiveStyles.cta}`}>
-          View My Resume
-        </button>
+        <Link href="/resume">
+          <button className={`${styles.cta} ${responsiveStyles.cta}`}>
+            View My Resume
+          </button>
+        </Link>
 
         <button
           className={`${styles.hamburger} ${responsiveStyles.hamburger}`}
@@ -87,11 +89,13 @@ export const Navbar: React.FC = () => {
               {link}
             </a>
           ))} */}
-          <button
-            className={`${styles.mobileCta} ${responsiveStyles.mobileCta}`}
-          >
-            View My Resume
-          </button>
+          <Link href="/resume">
+            <button
+              className={`${styles.mobileCta} ${responsiveStyles.mobileCta}`}
+            >
+              View My Resume
+            </button>
+          </Link>
         </div>
       )}
     </nav>

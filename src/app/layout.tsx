@@ -6,10 +6,8 @@
  * Last Modified: 20/03/2026
  */
 import type { Metadata } from "next";
-import { Navbar } from "@/components/Navbar/Navbar";
 import "./globals.css";
-import { SideIcons } from "@/components/SideIcons/SideIcons";
-import { Footer } from "@/components/Footer/Footer";
+import { RouteLayout } from "@/components/Layout/RouteLayout";
 
 export const metadata: Metadata = {
   title: "PortFolio",
@@ -24,10 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <SideIcons />
-        {children}
-        <Footer />
+        <RouteLayout>{children}</RouteLayout>
       </body>
     </html>
   );

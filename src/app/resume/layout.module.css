@@ -1,0 +1,15 @@
+/* Route wrapper for resume page */
+.resumeLayout {
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  padding-top: 64px;
+}
+
+@media print {
+  .content {
+    padding-top: 0;
+  }
+}

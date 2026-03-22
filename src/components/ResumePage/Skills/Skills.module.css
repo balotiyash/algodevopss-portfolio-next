@@ -1,0 +1,42 @@
+/* ─── Skills — ATS bullet list ─── */
+.section {
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+/* Section heading */
+.heading {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+  margin: 0 0 12px;
+}
+
+/* Bullet list */
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  columns: 2;
+  column-gap: clamp(16px, 3vw, 40px);
+}
+
+/* Each skill item */
+.item {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: #222;
+  line-height: 1.8;
+  break-inside: avoid;
+}
+
+/* ─── Mobile: single column ─── */
+@media (max-width: 500px) {
+  .list {
+    columns: 1;
+  }
+}

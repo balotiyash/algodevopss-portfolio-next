@@ -15,7 +15,7 @@ export const heroData = {
 
   ctaPrimary: {
     text: "View My Resume",
-    link: "/resume.pdf",
+    link: "/resume",
   },
 
   ctaSecondary: {

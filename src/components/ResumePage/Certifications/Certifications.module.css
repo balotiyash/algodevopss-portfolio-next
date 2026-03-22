@@ -1,0 +1,126 @@
+/* ─── Certifications — ATS bullet list ─── */
+.section {
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+/* Section heading */
+.heading {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+  margin: 0 0 12px;
+}
+
+/* Bullet list */
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Each cert item */
+.item {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: #222;
+  line-height: 1.8;
+  break-inside: avoid;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Clickable cert name */
+.name {
+  flex: 1;
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #000;
+  line-height: 1;
+}
+
+/* Expanded detail text */
+.detail {
+  font-size: clamp(0.8rem, 1.3vw, 0.9rem);
+  color: #444;
+  line-height: 1.6;
+  margin: 4px 0 8px;
+  padding-left: 4px;
+  border-left: 2px solid #000;
+  padding: 4px 0 4px 10px;
+}
+
+/* container like experience style */
+.detailBox {
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: #f7f7f7;
+  border-left: 3px solid #000;
+  border-radius: 0 4px 4px 0;
+
+  display: flex;
+  flex-direction: column; /* stack */
+  gap: 10px;
+}
+
+/* description text */
+.detailText {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: clamp(0.82rem, 1.4vw, 0.93rem);
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* image exactly 400x300 */
+.certificateImg {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .certificateImg {
+    width: 100%;
+    height: auto; /* avoid overflow on mobile */
+  }
+}
+
+/* ─── Print ─── */
+@media print {
+  .chevron {
+    display: none !important;
+  }
+
+  .detailBox {
+    display: none !important;
+  }
+}
+/* ─── Print: hide details ─── */
+@media print {
+  .detail {
+    display: none !important;
+  }
+}
