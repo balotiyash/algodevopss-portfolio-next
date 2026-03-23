@@ -10,7 +10,7 @@ import Image from "next/image";
 import styles from "./AboutMe.module.css";
 import responsiveStyles from "./Responsiveness.module.css";
 import { aboutMeData } from "@/data/AboutMe";
-
+import Link from "next/link";
 export const AboutMe = () => {
   return (
     <section id="about" className={styles.section}>
@@ -81,24 +81,26 @@ export const AboutMe = () => {
 
           {/* CTA */}
           <div className={`${styles.bottomRow} ${responsiveStyles.bottomRow}`}>
-            <button className={styles.ctaButton}>
-              Download CV
-              <span className={styles.arrowCircle}>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </span>
-            </button>
+            <Link href="/resume">
+              <button className={styles.ctaButton}>
+                Download Resume
+                <span className={styles.arrowCircle}>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </span>
+              </button>
+            </Link>
 
             <span className={styles.signature}>{aboutMeData.name}</span>
           </div>

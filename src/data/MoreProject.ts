@@ -16,7 +16,7 @@ export const moreProjects: MoreProject[] = [
     title: "Cloud Native Ecommerce Platform",
     description:
       "A scalable ecommerce platform with microservices, containerized workloads, and CI/CD-driven deployments.",
-    image: "/pngs/try.png",
+    image: "/try.png",
     techStack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
     githubUrl: "https://github.com/example/cloud-native-ecommerce",
     liveUrl: "https://example-ecommerce.vercel.app",
@@ -26,7 +26,7 @@ export const moreProjects: MoreProject[] = [
     title: "DevOps Monitoring Dashboard",
     description:
       "A real-time dashboard for application health, deployment metrics, and infrastructure events across environments.",
-    image: "/pngs/sample.png",
+    image: "/sample.png",
     techStack: ["React", "Tailwind CSS", "Express", "Prometheus", "Grafana"],
     githubUrl: "https://github.com/example/devops-monitoring-dashboard",
   },
@@ -35,7 +35,7 @@ export const moreProjects: MoreProject[] = [
     title: "AI Resume Analyzer",
     description:
       "An AI-assisted resume analyzer that scores profiles, extracts insights, and recommends targeted improvements.",
-    image: "/pngs/portrait1.png",
+    image: "/portrait4.png",
     techStack: ["Next.js", "Python", "FastAPI", "OpenAI API", "Redis"],
     liveUrl: "https://example-resume-ai.vercel.app",
   },
@@ -54,7 +54,7 @@ export const moreProjects: MoreProject[] = [
     title: "Progressive Web CRM",
     description:
       "A high-performance PWA CRM for field teams with offline sync, lead tracking, and role-based access.",
-    image: "/pngs/sample.png",
+    image: "/sample.png",
     techStack: ["Vue", "TypeScript", "Node.js", "MongoDB", "PWA"],
     githubUrl: "https://github.com/example/pwa-crm",
     liveUrl: "https://example-crm.app",
@@ -64,7 +64,7 @@ export const moreProjects: MoreProject[] = [
     title: "Intelligent Support Chatbot",
     description:
       "A domain-tuned chatbot for customer support with context retention, escalation workflows, and analytics.",
-    image: "/pngs/portrait1.png",
+    image: "/portrait4.png",
     techStack: ["Next.js", "LangChain", "Python", "Vector DB", "Azure OpenAI"],
     githubUrl: "https://github.com/example/intelligent-support-chatbot",
   },

@@ -18,11 +18,6 @@ export const heroData = {
     link: "/resume",
   },
 
-  ctaSecondary: {
-    text: "Hire Me",
-    link: "#contact",
-  },
-
   image: {
     src: "/pngs/portrait1.png",
     alt: "John Doe - Product Designer",

@@ -47,13 +47,13 @@ export const Hero: React.FC = () => {
               </button>
             </Link>
 
-            <a href={heroData.ctaSecondary.link}>
+            {/* <a href={heroData.ctaSecondary.link}>
               <button
                 className={`${styles.secondaryBtn} ${responsiveStyles.secondaryBtn}`}
               >
                 {heroData.ctaSecondary.text}
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -65,7 +65,11 @@ export const Hero: React.FC = () => {
           />
 
           {/* Rotating badge */}
-          <div className={`${styles.hireBadge} ${responsiveStyles.hireBadge}`}>
+          <Link
+            href="/#contact"
+            className={`${styles.hireBadge} ${responsiveStyles.hireBadge}`}
+            aria-label="Go to contact section"
+          >
             <div
               className={`${styles.hireBadgeInner} ${responsiveStyles.hireBadgeInner}`}
             >
@@ -80,7 +84,7 @@ export const Hero: React.FC = () => {
                 <path d="M7 17L17 7M17 7H7M17 7V17" />
               </svg>
             </div>
-          </div>
+          </Link>
 
           {/* Profile image */}
           <div

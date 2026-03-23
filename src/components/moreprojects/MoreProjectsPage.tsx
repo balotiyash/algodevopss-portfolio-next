@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
+import { FiArrowLeft } from "react-icons/fi";
 import { moreProjects } from "@/data/MoreProject";
 import styles from "./MoreProjectsPage.module.css";
 
@@ -25,6 +27,16 @@ export default function MoreProjectsPage() {
 
   return (
     <section className={styles.page}>
+      <div className={styles.backButtonWrap}>
+        <Link
+          href="/"
+          className={styles.backButton}
+          aria-label="Go back to portfolio"
+        >
+          <FiArrowLeft aria-hidden="true" />
+        </Link>
+      </div>
+
       <h1 className={styles.title}>More Projects</h1>
 
       <div className={styles.list}>
