@@ -46,14 +46,6 @@ export const Hero: React.FC = () => {
                 {heroData.ctaPrimary.text}
               </button>
             </Link>
-
-            {/* <a href={heroData.ctaSecondary.link}>
-              <button
-                className={`${styles.secondaryBtn} ${responsiveStyles.secondaryBtn}`}
-              >
-                {heroData.ctaSecondary.text}
-              </button>
-            </a> */}
           </div>
         </div>
 

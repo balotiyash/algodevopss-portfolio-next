@@ -13,7 +13,6 @@ import styles from "./page.module.css";
 
 // Existing components (UNCHANGED)
 import { Header } from "@/components/ResumePage/Header/Header";
-import { Summary } from "@/components/ResumePage/Summary/Summary";
 
 // ✅ New Dynamic Component
 import { DynamicSection } from "@/components/ResumePage/DynamicSection/DynamicSection";

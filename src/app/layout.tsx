@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* navbar+ sideicons + footer */}
         <RouteLayout>{children}</RouteLayout>
       </body>
     </html>

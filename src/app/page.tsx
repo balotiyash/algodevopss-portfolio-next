@@ -12,18 +12,24 @@ import { Experience } from "@/components/HomePage/ExperienceSection/Experience";
 import { Hero } from "@/components/HomePage/HeroSection/Hero";
 import { Marquee } from "@/components/HomePage/HeroSection/Marquee";
 import { Projects } from "@/components/HomePage/ProjectSection/Projects";
-import { Technologies } from "@/components/HomePage/Technologies/Technologies";
 import TechStackSection from "@/components/HomePage/TechStackSection/TechStackSection";
 
 export default function Home() {
   return (
     <main>
+      {/* hero section */}
       <Hero />
+      {/* marquee section under hero */}
       <Marquee />
+      {/* about me section */}
       <AboutMe />
+      {/* tech stack section */}
       <TechStackSection />
+      {/* projects section */}
       <Projects />
+      {/* experience section */}
       <Experience />
+      {/* contact section */}
       <Contact />
     </main>
   );

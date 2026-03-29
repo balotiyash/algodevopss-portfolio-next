@@ -1,0 +1,177 @@
+/** 
+ * File: src/components/ResumePage/DynamicSection/EntryItem.module.css
+ * Author: Harshita Gawas
+ * Description: Entry and accordion layout styles for DynamicSection.
+ * Created on: 29/03/2026
+ * Last Modified: 29/03/2026
+ */
+
+/* Used when collapsible = false (Summary, Skills) */
+/* ─── STATIC CONTENT (SUMMARY / SKILLS) ─── */
+.staticDetails {
+  opacity: 1 !important;
+}
+
+.staticRow:hover .title {
+  text-decoration: none;
+  cursor: default;
+}
+
+/* Each entry block */
+.entry {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+/* ─── TOP ROW (CLICKABLE HEADER) ─── */
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Focus accessibility */
+.row:focus-visible {
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+/* Left content (title + subtitle) */
+.left {
+  min-width: 0;
+  flex: 1;
+}
+
+/* Main title */
+.title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.title:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Subtitle (company / institution) */
+.subtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+/* Preview bullets (collapsed view) */
+.previewList {
+  margin: 0.45rem 0 0;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.previewList li + li {
+  margin-top: 0.18rem;
+}
+
+/* Right side (meta + arrow) */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  min-width: fit-content;
+  text-align: right;
+}
+
+/* Date / status */
+.meta {
+  font-size: 0.85rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* Chevron icon */
+.chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ─── ACCORDION ANIMATION ─── */
+.details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.25s ease,
+    margin-top 0.25s ease;
+}
+
+/* Open state */
+.detailsOpen {
+  max-height: 2000px;
+  opacity: 1;
+  margin-top: -0.1rem;
+}
+
+/* Inner content box (gray card with border) */
+.detailsInner {
+  margin: 0 0 0.85rem;
+  padding: 0.75rem 0.85rem;
+  border-left: 3px solid #000;
+  background: #ffffff;
+}
+
+/* Utility: hide in print */
+.noPrint {
+  display: block;
+}
+
+/* ─── RESPONSIVE ─── */
+
+/* Mobile */
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .meta {
+    white-space: normal;
+  }
+}
+
+/* ─── PRINT ─── */
+@media print {
+  .noPrint {
+    display: none !important;
+  }
+
+  .row {
+    padding: 0.45rem 0;
+  }
+
+  .chevron {
+    display: none;
+  }
+  .entry {
+    border: none;
+  }
+}

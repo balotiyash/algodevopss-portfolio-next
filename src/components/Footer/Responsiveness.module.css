@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center; /* center text globally */
+  }
+
+  .brand,
+  .column {
+    align-items: center; /* center flex children */
+  }
+
+  .brandDesc {
+    max-width: 100%;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .linkList,
+  .connectList {
+    align-items: center;
+  }
+
+  .connectLink {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ─── Mobile — single column ─── */
+@media (max-width: 500px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ─── Very small screens ─── */
+@media (max-width: 400px) {
+  .footer {
+    padding: 40px 16px 0;
+  }
+}

@@ -49,14 +49,16 @@ export const AboutMe = () => {
         {/* Right: Text content */}
         <div className={styles.textCol}>
           <p className={`${styles.subtitle} ${responsiveStyles.subtitle}`}>
+            {/* dash */}
             <span className={styles.dash} />
+            {/* section title */}
             About Me
           </p>
-
+          {/* heading */}
           <h2 className={styles.heading}>
             Who is <span className={styles.highlight}>{aboutMeData.name}?</span>
           </h2>
-
+          {/* description */}
           <p
             className={`${styles.description} ${responsiveStyles.description}`}
           >

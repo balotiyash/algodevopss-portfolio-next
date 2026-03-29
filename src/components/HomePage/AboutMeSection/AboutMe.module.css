@@ -7,12 +7,13 @@
  */
 
 /* ─── About Me Section ─── */
+/* main section */
 .section {
   background-color: var(--section-background);
   padding: 5rem 2rem;
   overflow: hidden;
 }
-
+/* Container for the section content */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,13 +31,13 @@
   align-items: center;
 }
 
-/* Yellow circle behind portrait */
+/*circle wrapper behind portrait */
 .circleWrapper {
   position: relative;
   width: clamp(280px, 28vw, 420px);
   height: clamp(280px, 28vw, 420px);
 }
-
+/* circle */
 .circle {
   width: 100%;
   height: 100%;
@@ -45,7 +46,7 @@
   overflow: hidden;
   position: relative;
 }
-
+/* image to display on circle */
 .circle img {
   width: 100%;
   height: 100%;
@@ -59,7 +60,7 @@
   inset: 0;
   pointer-events: none;
 }
-
+/* individual skill tag */
 .skillTag {
   position: absolute;
   font-family: var(--font-body);
@@ -82,7 +83,7 @@
   transform: scale(1.08) translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
-
+/* skill tag animation */
 @keyframes floatTag {
   0% {
     transform: translateY(0px);
