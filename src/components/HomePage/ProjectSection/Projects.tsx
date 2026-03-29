@@ -2,7 +2,7 @@
  * File: src/components/HomePage/ProjectSection/Projects.tsx
  * Author: Harshita Gawas
  * Description: Project section of the Portfolio application.
- * Created on: 19/03/2026
+ * Created on: 29/03/2026
  */
 
 /* Projects grid section – "My Latest Projects" */
@@ -31,7 +31,7 @@ export const Projects = () => {
 
           {/* View all button */}
           <Link href="/projects" className={styles.viewAll}>
-            <span className="view-btn">View All Projects</span>
+            <span className={styles.viewBtnText}>View All Projects</span>
             {/* Arrow circle icon */}
             <span className={styles.arrowCircle}>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -74,7 +74,7 @@ export const Projects = () => {
               {/* Title + arrow link */}
               <div className={styles.cardFooter}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
-                <span className={styles.cardArrow}>
+                {/* <span className={styles.cardArrow}>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
                       d="M6 14L14 6M14 6H7M14 6V13"
@@ -84,8 +84,33 @@ export const Projects = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </span>
+                </span> */}
               </div>
+
+              {/* Links buttons */}
+              {(project.github || project.live) && (
+                <div className={styles.links}>
+                  {project.github && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      className={styles.linkBtn}
+                    >
+                      GitHub
+                    </Link>
+                  )}
+
+                  {project.live && (
+                    <Link
+                      href={project.live}
+                      target="_blank"
+                      className={styles.linkBtnPrimary}
+                    >
+                      Live
+                    </Link>
+                  )}
+                </div>
+              )}
             </article>
           ))}
         </div>

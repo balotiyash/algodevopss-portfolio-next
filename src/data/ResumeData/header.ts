@@ -1,3 +1,9 @@
+/**
+ * File: src/data/ResumeData/header.ts
+ * Author: Harshita Gawas
+ * Description: Header data for the Resume page.
+ * Created on: 16/03/2026
+ */
 export interface ResumeIntro {
   name: string;
   tagline: string;

@@ -3,6 +3,7 @@
  * Author: Harshita Gawas
  * Description: Side icons styles of the Portfolio application.
  * Created on: 19/03/2026
+ * Last Modified: 29/03/2026
  */
 
 /* ─── Fixed side navigation on the right ─── */
@@ -42,7 +43,8 @@
 
 /* ─── Active state — green highlight ─── */
 .dot.active {
-  background: var(--cta-secondary);
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+
   box-shadow: 0 4px 16px var(--cta-secondary) / 0.35;
 }
 

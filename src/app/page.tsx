@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Main page for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 20/03/2026
+ * Last Modified: 23/03/2026
  */
 
 import { AboutMe } from "@/components/HomePage/AboutMeSection/AboutMe";
@@ -13,6 +13,7 @@ import { Hero } from "@/components/HomePage/HeroSection/Hero";
 import { Marquee } from "@/components/HomePage/HeroSection/Marquee";
 import { Projects } from "@/components/HomePage/ProjectSection/Projects";
 import { Technologies } from "@/components/HomePage/Technologies/Technologies";
+import TechStackSection from "@/components/HomePage/TechStackSection/TechStackSection";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <AboutMe />
-      <Technologies />
+      <TechStackSection />
       <Projects />
       <Experience />
       <Contact />

@@ -1,3 +1,10 @@
+/**
+ * File: src/data/MoreProject.ts
+ * Author: Harshita Gawas
+ * Description: More project data for the Resume page.
+ * Created on: 16/03/2026
+ */
+
 // Data model for more-project cards.
 export interface MoreProject {
   id: number;

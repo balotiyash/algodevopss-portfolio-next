@@ -3,12 +3,12 @@
  * Author: Harshita Gawas
  * Description: Styles for the Footer component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 29/03/2026
  */
 
 /* ─── Footer wrapper — dark teal bg ─── */
 .footer {
-  background: var(--cta-primary);
+  background: var(--section-background);
   padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 80px) 0;
 }
 
@@ -23,7 +23,7 @@
 /* ─── 4-column grid ─── */
 .grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.4fr 1fr 1fr;
   gap: clamp(24px, 4vw, 48px);
   padding-bottom: clamp(40px, 5vw, 64px);
 }
@@ -39,14 +39,17 @@
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 800;
-  color: #fff;
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
 .brandDesc {
   font-family: var(--font-body);
   font-size: clamp(0.8rem, 1.3vw, 0.95rem);
-  color: var(--border-color);
+  color: var(--text-color);
   line-height: 1.7;
   margin: 0;
   max-width: 300px;
@@ -65,6 +68,7 @@
   height: 38px;
   border-radius: 50%;
   background: var(--highlight);
+
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -113,13 +117,13 @@
 .link {
   font-family: var(--font-body);
   font-size: clamp(0.8rem, 1.2vw, 0.92rem);
-  color: var(--border-color);
+  color: var(--text-color);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: hsl(0, 0%, 100%);
+  color: var(--heading-color);
 }
 
 /* ─── Connect column links ─── */
@@ -138,7 +142,7 @@
   gap: 10px;
   font-family: var(--font-body);
   font-size: clamp(0.78rem, 1.2vw, 0.9rem);
-  color: var(--border-color);
+  color: var(--text-color);
   text-decoration: none;
   transition: color 0.2s ease;
   line-height: 1.5;
@@ -150,7 +154,7 @@
 }
 
 .connectLink:hover {
-  color: hsl(0, 0%, 100%);
+  color: var(--heading-color);
 }
 
 /* ─── Bottom bar ─── */
@@ -167,7 +171,7 @@
 .copyright {
   font-family: var(--font-body);
   font-size: clamp(0.72rem, 1.1vw, 0.85rem);
-  color: var(--border-color);
+  color: var(--text-color);
   margin: 0;
 }
 

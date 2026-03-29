@@ -3,14 +3,14 @@
  * Author: Harshita Gawas
  * Description: Hero section styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 29/03/2026
  */
 .heroSection {
   min-height: 80svh;
   display: flex;
   align-items: center;
   padding-top: 20px;
-  background: var(--page-background);
+
   overflow: hidden;
   position: relative;
 }
@@ -47,7 +47,11 @@
   font-weight: 400;
   color: var(--text-color);
   text-decoration: underline;
-  text-decoration-color: var(--highlight);
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
 }
@@ -67,7 +71,8 @@
 }
 
 .primaryBtn {
-  background: var(--cta-primary);
+  background: linear-gradient(to right, #e57a44, #45239b);
+
   color: var(--page-background);
   border: none;
   padding: 14px 28px;
@@ -75,6 +80,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+
   transition:
     transform 150ms ease,
     box-shadow 200ms ease;
@@ -83,23 +89,6 @@
 .primaryBtn:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(29, 46, 44, 0.3);
-}
-
-.secondaryBtn {
-  background: transparent;
-  color: var(--heading-color);
-  border: 1.5px solid var(--heading-color);
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 200ms ease;
-}
-
-.secondaryBtn:hover {
-  background: var(--heading-color);
-  color: var(--page-background);
 }
 
 /* Right Visual */
@@ -151,7 +140,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px dashed var(--cta-primary);
+  border: 2px dashed var(--heading-color);
   display: flex;
   align-items: center;
   justify-content: center;

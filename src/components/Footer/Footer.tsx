@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Footer component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 29/03/2026
  */
 
 "use client";
@@ -67,13 +67,6 @@ export const Footer: React.FC = () => {
     { label: "Contact", href: "/#contact" },
   ];
 
-  /* Info links */
-  const infoLinks = [
-    { label: "FAQ", href: "#" },
-    { label: "Terms & Conditions", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-  ];
-
   /* Contact details */
   const email = "balotiyash@gmail.com";
   const phone = "+91 98765 43210";
@@ -127,21 +120,7 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Col 3 — Information */}
-        <div className={styles.column}>
-          <h4 className={styles.colTitle}>Information</h4>
-          <ul className={styles.linkList}>
-            {infoLinks.map((link) => (
-              <li key={link.label}>
-                <a href={link.href} className={styles.link}>
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Col 4 — Connect */}
+        {/* Col 3 — Connect */}
         <div className={styles.column}>
           <h4 className={styles.colTitle}>Connect</h4>
           <ul className={styles.connectList}>

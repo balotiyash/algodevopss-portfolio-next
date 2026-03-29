@@ -3,13 +3,12 @@
  * Author: Harshita Gawas
  * Description: Styles for the Experience section of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 21/03/2026
+ * Modified on: 29/03/2026
  */
 
 .section {
   position: relative;
   width: 100%;
-  background: var(--page-background);
 }
 
 .stickyBox {
@@ -47,7 +46,10 @@
 }
 
 .title span {
-  color: var(--highlight);
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .trackWrapper {
@@ -127,6 +129,7 @@
   position: relative;
 
   background: var(--section-background);
+
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: clamp(20px, 3vw, 32px);

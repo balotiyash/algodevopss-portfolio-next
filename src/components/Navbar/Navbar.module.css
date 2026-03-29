@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Navbar styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 18/03/2026
+ * Last Modified: 29/03/2026
  */
 
 .navWrapper {
@@ -110,6 +110,7 @@
 
 /* CTA */
 .cta {
+  text-align: center;
   background: transparent;
   color: var(--heading-color);
   border: 1.5px solid var(--heading-color);
@@ -123,8 +124,9 @@
 }
 
 .cta:hover {
-  background: var(--cta-primary);
+  background: linear-gradient(to right, #e57a44, #45239b);
   color: var(--page-background);
+  border: none;
 }
 
 /* Hamburger */

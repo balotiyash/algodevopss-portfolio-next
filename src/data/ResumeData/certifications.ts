@@ -1,3 +1,9 @@
+/**
+ * File: src/data/ResumeData/certifications.ts
+ * Author: Harshita Gawas
+ * Description: Certification data for the Resume page.
+ * Created on: 16/03/2026
+ */
 export interface ResumeCertification {
   id: number;
   name: string;
@@ -22,6 +28,6 @@ export const certifications: ResumeCertification[] = [
     name: "HubSpot Inbound Marketing Certification",
     details:
       "Expertise in inbound methodology, content strategy, and lead nurturing.",
-    image: "/certs/hubspot.jpg",
+    image: "/Portfolio.pdf",
   },
 ];

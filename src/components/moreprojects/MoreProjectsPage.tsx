@@ -1,3 +1,10 @@
+/**
+ * File: src/components/HomePage/MoreProjects/MoreProjectsPage.tsx
+ * Author: Harshita Gawas
+ * Description: More Projects page  for the portfolio application.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
 "use client";
 
 import Image from "next/image";
@@ -37,7 +44,9 @@ export default function MoreProjectsPage() {
         </Link>
       </div>
 
-      <h1 className={styles.title}>More Projects</h1>
+      <h1 className={styles.title}>
+        More <span>Projects</span>
+      </h1>
 
       <div className={styles.list}>
         {paginatedProjects.map((project, index) => {

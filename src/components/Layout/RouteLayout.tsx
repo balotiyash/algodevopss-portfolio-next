@@ -1,3 +1,11 @@
+/**
+ * File: src/components/Layout/RouteLayout.tsx
+ * Author: Harshita Gawas
+ * Description: Route Layout component for the portfolio application.
+ * Created on: 28/03/2026
+ * Last Modified: 29/03/2026
+ */
+//use only at main page
 "use client";
 
 import type { ReactNode } from "react";

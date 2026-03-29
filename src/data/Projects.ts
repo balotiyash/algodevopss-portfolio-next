@@ -13,6 +13,8 @@ export interface Project {
   title: string;
   tags: string[];
   image: string;
+  github?: string;
+  live?: string;
 }
 
 /* All projects shown in the grid */
@@ -22,23 +24,27 @@ export const projects: Project[] = [
     title: "Beauty Product – Ecommerce Mobile App Solution",
     tags: ["UI/UX Design", "App Design", "Wireframe"],
     image: "/project",
+    github: "https://github.com/example/project",
+    live: "https://project-live.com",
   },
   {
     id: 2,
-    title: "Beauty Product Mobile App Landing Page Design",
-    tags: ["UI/UX Design", "Web Design", "Wireframe"],
+    title: "Landing Page Design",
+    tags: ["UI/UX Design"],
     image: "/project2",
+    live: "https://live-only.com",
   },
   {
     id: 3,
-    title: "Coffee Shop App – Coffee Ordering App Solution",
-    tags: ["UI/UX Design", "App Design", "Wireframe"],
+    title: "Coffee App",
+    tags: ["App Design"],
     image: "/project3",
+    github: "https://github.com/example/coffee",
   },
   {
     id: 4,
-    title: "Coffee Shop Mobile App Landing Page Design",
-    tags: ["UI/UX Design", "Web Design", "Wireframe"],
+    title: "No Links Project",
+    tags: ["Wireframe"],
     image: "/project4",
   },
 ];

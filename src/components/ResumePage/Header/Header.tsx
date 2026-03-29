@@ -1,3 +1,11 @@
+/**
+ * File: src/components/ResumePage/Header/Header.tsx
+ * Author: Harshita Gawas
+ * Description: Header component for the Resume page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
+
 /* Resume intro/header — ATS-friendly black & white styling */
 import React from "react";
 import { resumeIntro } from "@/data/ResumeData/header";

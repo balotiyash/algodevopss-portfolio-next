@@ -1,3 +1,11 @@
+/*
+ * File: src/app/resume/page.module.css
+ * Author: Harshita Gawas
+ * Description: Page styles for the Resume page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
+
 /* Resume page — centered paper look */
 .page {
   min-height: 100vh;
@@ -16,7 +24,6 @@
   border-radius: 4px;
 }
 
-/* Keep each resume block from splitting awkwardly between pages */
 .resumeBlock {
   break-inside: avoid;
   page-break-inside: avoid;

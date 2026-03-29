@@ -3,6 +3,7 @@
  * Author: Harshita Gawas
  * Description: Global styles for the Portfolio application.
  * Created on: 15/03/2026
+ * Last Modified: 29/03/2026
  */
 
 @font-face {
@@ -34,19 +35,13 @@
   --font-heading: "Bricolage Grotesque";
 
   /* Page Background */
-  --page-background: #faf7f2;
+  --page-background: #ffffff;
 
   /* Navbar / Cards / Sections */
-  --section-background: #f2ebe0;
-
-  /* Primary Buttons / CTAs */
-  --cta-primary: #1d2e2c;
+  --section-background: #f8fafc;
 
   /* Your Name / Highlights */
-  --highlight: #c4522a;
-
-  /* Links / Secondary CTAs */
-  --cta-secondary: #1e6b63;
+  --highlight: #6d5bd0;
 
   /* Headings */
   --heading-color: #2a1f18;
@@ -56,9 +51,6 @@
 
   /* Borders / Dividers */
   --border-color: #d9cebe;
-
-  /* Footer / Dark Sections */
-  --footer-background: #1d2e2c;
 }
 
 body {

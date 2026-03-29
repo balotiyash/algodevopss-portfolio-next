@@ -1,3 +1,10 @@
+/**
+ * File: src/data/ResumeData/awards.ts
+ * Author: Harshita Gawas
+ * Description: Award data for the Resume page.
+ * Created on: 16/03/2026
+ */
+
 export interface ResumeAward {
   id: number;
   title: string;

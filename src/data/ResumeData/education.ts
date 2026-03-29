@@ -1,3 +1,10 @@
+/**
+ * File: src/data/ResumeData/education.ts
+ * Author: Harshita Gawas
+ * Description: Education data for the Resume page.
+ * Created on: 16/03/2026
+ */
+
 // Each semester now carries its own certificate
 export interface SemesterData {
   label: string; // "Sem 1"
@@ -31,12 +38,12 @@ export const education: ResumeEducation[] = [
       {
         label: "Sem 1",
         score: "9.5 SGPI",
-        certificate: "/pngs/try.png",
+        certificate: "/Portfolio.pdf",
       },
       {
         label: "Sem 2",
         score: "9.7 SGPI",
-        certificate: "/pngs/try.png",
+        certificate: "/Portfolio.pdf",
       },
     ],
   },

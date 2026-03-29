@@ -1,3 +1,10 @@
+/**
+ * File: src/data/ResumeData/experience.ts
+ * Author: Harshita Gawas
+ * Description: Experience data for the Resume page.
+ * Created on: 16/03/2026
+ */
+
 export interface ResumeExperience {
   id: number;
   role: string;
@@ -5,6 +12,7 @@ export interface ResumeExperience {
   location: string;
   from: string;
   to: string;
+  blah?: string;
   bullets: string[];
   details?: string;
   techStack?: string[];
@@ -13,6 +21,7 @@ export interface ResumeExperience {
   images?: string[];
   certificates?: string[];
   period?: string;
+  manager?: string[];
 }
 
 export const workExperience: ResumeExperience[] = [
@@ -43,10 +52,17 @@ export const workExperience: ResumeExperience[] = [
       "Performance dashboards",
       "Cross-channel attribution",
     ],
+    blah: "This is a test",
     website: "https://example.com",
-    images: ["/pngs/try.png", "/work2.png", "/work2.png", "/work2.png"],
+    images: [
+      "/pngs/img1.png",
+      "/pngs/img1.png",
+      "/pngs/img1.png",
+      "/pngs/img1.png",
+    ],
     certificates: ["/pngs/try.png"],
     period: "2 years 2 months",
+    manager: ["John Doe", "Jane Smith"],
   },
   {
     id: 2,
@@ -74,10 +90,13 @@ export const workExperience: ResumeExperience[] = [
       "Lead generation funnels",
       "Social media management",
     ],
+    blah: "This is a test2",
+
     website: "https://example.com",
     images: ["/work1.png", "/work2.png"],
     certificates: ["/cert1.png"],
 
     period: "2 years 2 months",
+    manager: ["Alice Johnson", "Bob Brown"],
   },
 ];

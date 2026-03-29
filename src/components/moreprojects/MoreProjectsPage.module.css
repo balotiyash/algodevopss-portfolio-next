@@ -1,3 +1,10 @@
+/** 
+ * File: src/components/HomePage/MoreProjects/MoreProjectsPage.module.css
+ * Author: Harshita Gawas
+ * Description: More Projects page styles for the portfolio application.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+*/
 /* Main page container with desktop spacing. */
 .page {
   width: min(1200px, 100%);
@@ -42,6 +49,13 @@
   line-height: 1.15;
 }
 
+.title span {
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -79,7 +93,6 @@
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border-radius: 12px;
-  background: #e7ddcf;
 }
 
 .image {
@@ -122,8 +135,8 @@
 .techItem {
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--cta-secondary);
-  color: #fff;
+  background: #ede9fe;
+  color: #5b4bd1;
   font-family: var(--font-body), sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
@@ -156,12 +169,13 @@
 }
 
 .github {
-  background: #1d2e2c;
+  background: var(--highlight);
   color: #fff;
 }
 
 .live {
-  background: #c4522a;
+  background: linear-gradient(to right, #e57a44, #45239b);
+
   color: #fff;
 }
 
@@ -192,7 +206,7 @@
 }
 
 .activePage {
-  background: var(--cta-primary);
+  background: var(--highlight);
   color: #fff;
   border-color: var(--cta-primary);
 }

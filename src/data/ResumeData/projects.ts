@@ -1,3 +1,10 @@
+/**
+ * File: src/data/ResumeData/projects.ts
+ * Author: Harshita Gawas
+ * Description: Project data for the Resume page.
+ * Created on: 16/03/2026
+ */
+
 export interface ResumeProjectLink {
   label: string;
   url: string;

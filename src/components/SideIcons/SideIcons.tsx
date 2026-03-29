@@ -3,14 +3,14 @@
  * Author: Harshita Gawas
  * Description: Side icons compoenent of the Portfolio application.
  * Created on: 19/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 29/03/2026
  */
 "use client";
 
 import React, { useState, useEffect } from "react";
 import {
   FaBriefcase,
-  // FaEnvelope,
+  FaEnvelope,
   FaFolderOpen,
   FaLaptopCode,
   FaHouse,
@@ -31,7 +31,7 @@ const sections: Section[] = [
   { id: "technologies", label: "Tech", icon: <FaLaptopCode /> },
   { id: "projects", label: "Projects", icon: <FaFolderOpen /> },
   { id: "experience", label: "Experience", icon: <FaBriefcase /> },
-  // { id: "contact", label: "Contact", icon: <FaEnvelope /> },
+  { id: "contact", label: "Contact", icon: <FaEnvelope /> },
 ];
 
 export const SideIcons: React.FC = () => {

@@ -1,0 +1,87 @@
+/** 
+ * File: src/components/HomePage/TechStackSection/TechStackSection.module.css
+ * Author: Harshita Gawas
+ * Description: TechStack Section component styles for the TechStack section of the portfolio application.
+ * Created on: 28/03/2026
+ * Last Modified: 29/03/2026
+*/
+/* Main section container for the logo marquee area */
+.section {
+  margin-top: 100px;
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+/* Section title styling */
+.title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  transform: translateY(-30px);
+  color: var(--heading-color);
+}
+
+.title span {
+  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Decorative dots positioned at top-left corner */
+.topLeft {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+/* Decorative dots positioned at top-right corner */
+.topRight {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+/* Decorative dots positioned at bottom-left corner */
+.bottomLeft {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+
+/* Decorative dots positioned at bottom-right corner */
+.bottomRight {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+/* Logo image displayed inside the marquee */
+.logo {
+  /* width: 64px; */
+  height: 64px;
+  object-fit: contain;
+  /* cursor: pointer; */
+}
+
+/* Adjust title size for small tablets */
+@media (max-width: 500px) {
+  .title {
+    font-size: 36px;
+    transform: translateY(-28px);
+  }
+}
+
+/* Further adjustments for mobile screens */
+@media (max-width: 426px) {
+  .title {
+    font-size: 28px;
+    transform: translateY(-15px);
+  }
+
+  /* Smaller logos on mobile */
+  .logo {
+    /* width: 48px; */
+    height: 48px;
+  }
+}

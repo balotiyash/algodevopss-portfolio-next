@@ -1,0 +1,54 @@
+/** 
+ * File: src/components/HomePage/TechStackSection/MarqueeRow.module.css
+ * Author: Harshita Gawas
+ * Description: Marquee Row component styles for the TechStack section of the portfolio application.
+ * Created on: 28/03/2026
+ * Last Modified: 29/03/2026
+*/
+
+/* Main marquee container controlling scrolling area */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  --duration: 120s; /* animation speed */
+  --gap: 8rem; /* spacing between items */
+  gap: var(--gap);
+  padding: 35px;
+}
+
+/* Track that holds marquee items and moves horizontally */
+.track {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--gap);
+  justify-content: space-around;
+  animation: marquee-horizontal var(--duration) linear infinite;
+}
+
+/* Horizontal layout for marquee items */
+.trackHorizontal {
+  flex-direction: row;
+}
+
+/* Reverse scrolling direction */
+.reverse {
+  animation-direction: reverse;
+}
+
+/* Horizontal scrolling animation */
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Reduce spacing between items on small mobile screens */
+@media (max-width: 426px) {
+  .marquee {
+    --gap: 4rem;
+  }
+}

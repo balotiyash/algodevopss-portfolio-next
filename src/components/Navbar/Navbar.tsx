@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Navbar component  for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 17/03/2026
+ * Last Modified: 29/03/2026
  */
 "use client";
 
@@ -11,15 +11,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import responsiveStyles from "./Responsiveness.module.css";
 import Link from "next/link";
-
-// const navLinks = [
-//   // "Home",
-//   // "Services",
-//   // "About",
-//   // "Projects",
-//   // "Blogs",
-//   // "Testimonials",
-// ];
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,18 +33,6 @@ export const Navbar: React.FC = () => {
           {/* <div className={styles.logoIcon}>H</div> */}
           <span className={styles.logoText}>John Doe</span>
         </div>
-
-        {/* <div className={styles.links}>
-          {navLinks.map((link, i) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className={i === 0 ? styles.activeLink : ""}
-            >
-              {link}
-            </a>
-          ))}
-        </div> */}
         <Link href="/resume">
           <button className={`${styles.cta} ${responsiveStyles.cta}`}>
             View My Resume
@@ -79,16 +58,6 @@ export const Navbar: React.FC = () => {
 
       {mobileOpen && (
         <div className={`${styles.mobileMenu} ${responsiveStyles.mobileMenu}`}>
-          {/* {navLinks.map((link, i) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className={i === 0 ? styles.activeLink : ""}
-              onClick={() => setMobileOpen(false)}
-            >
-              {link}
-            </a>
-          ))} */}
           <Link href="/resume">
             <button
               className={`${styles.mobileCta} ${responsiveStyles.mobileCta}`}

@@ -1,44 +1,86 @@
-/* Resume page — ATS-friendly, black & white, printable */
+/*
+ * File: src/app/projects/page.tsx
+ * Author: Harshita Gawas
+ * Description: Page content for the Projects page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
+
+"use client";
+
 import React from "react";
+import styles from "./page.module.css";
+
+// Existing components (UNCHANGED)
 import { Header } from "@/components/ResumePage/Header/Header";
 import { Summary } from "@/components/ResumePage/Summary/Summary";
-import { Skills } from "@/components/ResumePage/Skills/Skills";
-import styles from "./page.module.css";
-import { Experience } from "@/components/ResumePage/Experience/Experience";
-import { Education } from "@/components/ResumePage/Education/Education";
-import { Certifications } from "@/components/ResumePage/Certifications/Certifications";
-import { Projects } from "@/components/ResumePage/Projects/Projects";
-import { Awards } from "@/components/ResumePage/Awards/Awards";
 
-const Resume: React.FC = () => (
-  <main className={styles.page}>
-    <div className={styles.paper}>
-      <div className={styles.resumeBlock}>
-        <Header />
+// ✅ New Dynamic Component
+import { DynamicSection } from "@/components/ResumePage/DynamicSection/DynamicSection";
+
+// ✅ Data imports
+import { education } from "@/data/ResumeData/education";
+import { workExperience } from "@/data/ResumeData/experience";
+import { certifications } from "@/data/ResumeData/certifications";
+import { projects } from "@/data/ResumeData/projects";
+import { awards } from "@/data/ResumeData/awards";
+import { skillsData } from "@/data/ResumeData/skills";
+import { summaryData } from "@/data/ResumeData/summary";
+
+const Resume: React.FC = () => {
+  return (
+    <main className={styles.page}>
+      <div className={styles.paper}>
+        {/* ─── Header ─── */}
+        <div className={styles.resumeBlock}>
+          <Header />
+        </div>
+
+        {/* ─── Summary ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection
+            title="Professional Summary"
+            data={summaryData}
+            collapsible={false}
+          />
+        </div>
+
+        {/* ─── Experience ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Experience" data={workExperience} />
+        </div>
+
+        {/* ─── Projects ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Projects" data={projects} />
+        </div>
+
+        {/* ─── Education ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Education" data={education} />
+        </div>
+
+        {/* ─── Skills (kept separate intentionally) ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection
+            title="Skills"
+            data={skillsData}
+            collapsible={false}
+          />
+        </div>
+
+        {/* ─── Certifications ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Certifications" data={certifications} />
+        </div>
+
+        {/* ─── Awards ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Awards" data={awards} />
+        </div>
       </div>
-      <div className={styles.resumeBlock}>
-        <Summary />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Experience />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Projects />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Education />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Skills />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Certifications />
-      </div>
-      <div className={styles.resumeBlock}>
-        <Awards />
-      </div>
-    </div>
-  </main>
-);
+    </main>
+  );
+};
 
 export default Resume;

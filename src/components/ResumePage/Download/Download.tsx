@@ -1,3 +1,10 @@
+/**
+ * File: src/components/ResumePage/Download/Download.tsx
+ * Author: Harshita Gawas
+ * Description: Download button component for the Resume page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
 "use client";
 
 import Link from "next/link";

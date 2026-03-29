@@ -3,7 +3,7 @@
  * Author: Harshita Gawas
  * Description: Contact section component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 29/03/2026
  */
 "use client";
 import React, { useState } from "react";
@@ -57,7 +57,10 @@ export const Contact: React.FC = () => {
         {/* ─── Left: info panel ─── */}
         <div className={styles.infoPanel}>
           {/* Label */}
-          <span className={styles.label}>— Contact Me</span>
+          <p className={styles.subtitle}>
+            <span className={styles.dash} />
+            Contact Me
+          </p>
 
           {/* Heading with highlight */}
           <h2 className={styles.heading}>

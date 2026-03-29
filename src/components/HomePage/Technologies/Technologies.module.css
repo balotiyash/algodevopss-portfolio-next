@@ -3,12 +3,13 @@
  * Author: Harshita Gawas
  * Description: Styles for the Technologies section of the Portfolio application.
  * Created on: 18/03/2026
+  * Last Modified: 29/03/2026
 
  */
 /* ─── Section wrapper ─── */
 .section {
   padding: 5rem 2rem;
-  background-color: var(--page-background);
+
   text-align: center;
 }
 
