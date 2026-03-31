@@ -5,6 +5,8 @@
  * Created on: 15/03/2026
  * Last Modified: 23/03/2026
  */
+
+// root page layout
 import type { Metadata } from "next";
 import "./globals.css";
 import { RouteLayout } from "@/components/Layout/RouteLayout";

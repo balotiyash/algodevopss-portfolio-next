@@ -6,6 +6,8 @@
  * Last Modified: 29/03/2026
  */
 
+/* Purpose: Defines entry row layout, accordion animation states, and responsive/print behavior for section items. */
+
 /* Used when collapsible = false (Summary, Skills) */
 /* ─── STATIC CONTENT (SUMMARY / SKILLS) ─── */
 .staticDetails {

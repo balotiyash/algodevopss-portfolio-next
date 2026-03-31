@@ -11,6 +11,8 @@ import styles from "./EntryItem.module.css";
 import { EntryHeaderRow } from "./EntryHeaderRow";
 import { EntryDetails } from "./EntryDetails";
 
+// Purpose: Compose one full resume entry from a header row and its corresponding details block.
+
 type DetailEntry = [string, unknown];
 
 interface EntryItemProps {
@@ -53,6 +55,7 @@ export const EntryItem: React.FC<EntryItemProps> = ({
   const itemId = item.id as string | number;
 
   return (
+    // Each entry is wrapped in an article for clear semantic grouping.
     <article className={styles.entry}>
       {/* ─── HEADER ROW ─── */}
       <EntryHeaderRow

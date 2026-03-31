@@ -26,18 +26,18 @@
   flex-direction: column;
   gap: 16px;
 }
-
+/* Brand name */
 .brandName {
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 800;
-  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
-
+/* Brand description */
 .brandDesc {
   font-family: var(--font-body);
   font-size: clamp(0.8rem, 1.3vw, 0.95rem);
@@ -54,7 +54,7 @@
   gap: 10px;
   margin-top: 8px;
 }
-
+/* Individual social icon */
 .socialIcon {
   width: 38px;
   height: 38px;
@@ -71,19 +71,19 @@
     border-color 0.25s ease,
     background-color 0.25s ease;
 }
-
+/* Social icon SVG */
 .socialIcon svg {
   font-size: 1.02rem;
   line-height: 1;
 }
-
+/* Social icon hover effect */
 .socialIcon:hover {
   transform: translateY(-3px);
   background-color: color-mix(in srgb, var(--highlight) 86%, #ffffff 14%);
   border-color: color-mix(in srgb, var(--highlight) 70%, #ffffff 30%);
-  box-shadow: 0 6px 20px color-mix(in srgb, var(--highlight) 45%, #000000 55%);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--highlight) 45%, #000000 35%);
 }
-
+/* Social icon active effect */
 .socialIcon:active {
   transform: scale(0.96);
 }
@@ -94,7 +94,7 @@
   flex-direction: column;
   gap: 4px;
 }
-
+/* Column title */
 .colTitle {
   font-family: var(--font-heading);
   font-size: clamp(0.95rem, 1.5vw, 1.1rem);
@@ -112,7 +112,7 @@
   flex-direction: column;
   gap: 10px;
 }
-
+/* Individual link */
 .link {
   font-family: var(--font-body);
   font-size: clamp(0.8rem, 1.2vw, 0.92rem);
@@ -120,7 +120,7 @@
   text-decoration: none;
   transition: color 0.2s ease;
 }
-
+/* Link hover effect */
 .link:hover {
   color: var(--heading-color);
 }
@@ -134,7 +134,7 @@
   flex-direction: column;
   gap: 14px;
 }
-
+/* Individual connect with me link */
 .connectLink {
   display: flex;
   align-items: flex-start;
@@ -146,7 +146,7 @@
   transition: color 0.2s ease;
   line-height: 1.5;
 }
-
+/* Connect with me icon */
 .connectIcon {
   flex-shrink: 0;
   margin-top: 3px;
@@ -154,11 +154,11 @@
   color: var(--highlight);
   transition: transform 0.2s ease;
 }
-
+/* Connect with me link hover effect */
 .connectLink:hover {
   color: var(--heading-color);
 }
-
+/* Connect icon hover effect */
 .connectLink:hover .connectIcon {
   transform: translateY(-1px);
 }
@@ -173,14 +173,14 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-
+/* Copyright text */
 .copyright {
   font-family: var(--font-body);
   font-size: clamp(0.72rem, 1.1vw, 0.85rem);
   color: var(--text-color);
   margin: 0;
 }
-
+/* Copyright name */
 .copyrightName {
   color: var(--highlight);
   font-weight: 600;

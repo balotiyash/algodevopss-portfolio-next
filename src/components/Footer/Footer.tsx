@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Col 3 — Connect */}
+        {/* Col 3 — Connect with us */}
         <div className={`${styles.column} ${responsivenessStyles.column}`}>
           <h4 className={styles.colTitle}>Connect</h4>
           <ul

@@ -10,6 +10,8 @@ import React from "react";
 import styles from "./MediaCard.module.css";
 import { isImageFile, isPdfFile } from "./helpers";
 
+// Purpose: Normalize media rendering by selecting image, PDF-link card, or generic file-link card.
+
 /**
  * Media renderer (Image / PDF / File)
  */
@@ -19,6 +21,7 @@ interface MediaCardProps {
 }
 
 export const MediaCard: React.FC<MediaCardProps> = ({ src, alt }) => {
+  // PDF files are shown as a labeled external-link card.
   if (isPdfFile(src)) {
     return (
       <a
@@ -33,10 +36,12 @@ export const MediaCard: React.FC<MediaCardProps> = ({ src, alt }) => {
     );
   }
 
+  // Image files are rendered inline as preview images.
   if (isImageFile(src)) {
     return <img src={src} alt={alt} className={styles.image} />;
   }
 
+  // Any other file type falls back to a generic link card.
   return (
     <a
       href={src}

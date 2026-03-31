@@ -1,0 +1,74 @@
+/*
+ * File: src/components/HomePage/ExperienceSection/ExperienceCard.module.css
+ * Author: Harshita Gawas
+ * Description: Experience section Card styles of the Portfolio application.
+ * Created on: 19/03/2026
+ * Modified on: 31/03/2026
+ */
+
+/* Experience card */
+.card {
+  width: 100%;
+  position: relative;
+  background: var(--section-background);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: clamp(20px, 3vw, 32px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 10px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Card type icon */
+.cardTypeIcon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--section-background);
+  color: var(--highlight);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Work card styling */
+.cardWork {
+  border: 2px solid var(--highlight);
+}
+
+/* Education card styling */
+.cardEducation {
+  border: 1px dashed var(--border-color);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Role title */
+.role {
+  font-weight: 700;
+}
+
+/* Company name */
+.company {
+  color: var(--highlight);
+}
+
+/* Description text */
+.desc {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

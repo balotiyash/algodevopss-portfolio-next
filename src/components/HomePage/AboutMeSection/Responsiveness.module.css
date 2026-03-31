@@ -1,33 +1,43 @@
+/**
+ * File: src/components/AboutMeSection/Responsiveness.module.css
+ * Author: Harshita Gawas
+ * Description: Responsive styles for the About Me section.
+ * Created on: 20/03/2026
+ * Last Modified: 31/03/2026
+ */
+
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
+  /* main container */
   .container {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
+  /* image column(left) */
   .imageCol {
     order: -1;
   }
-
+  /* description */
   .description {
     max-width: 100%;
   }
-
+  /* stats */
   .stats {
     justify-content: center;
   }
-
+  /* bottom row(download btn + signature */
   .bottomRow {
     justify-content: center;
     flex-wrap: wrap;
   }
-
+  /* subtitle */
   .subtitle {
     justify-content: center;
   }
 
   /* Reposition tags for smaller screens */
   @media (max-width: 900px) {
+    /* individual tags */
     .tag1 {
       transform: translateX(80%);
     }
@@ -53,11 +63,12 @@
 }
 
 @media (max-width: 540px) {
+  /* circle wrapper */
   .circleWrapper {
     width: 220px;
     height: 220px;
   }
-
+  /* skill tag */
   .skillTag {
     font-size: 0.65rem;
     padding: 0.3rem 0.7rem;

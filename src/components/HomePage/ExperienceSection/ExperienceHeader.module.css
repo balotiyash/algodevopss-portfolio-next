@@ -1,0 +1,34 @@
+/*
+ * File: src/components/HomePage/ExperienceSection/ExperienceHeader.module.css
+ * Author: Harshita Gawas
+ * Description: Experience section Header styles of the Portfolio application.
+ * Created on: 19/03/2026
+ * Modified on: 31/03/2026
+ */
+
+/* Header wrapper */
+.header {
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+/* Decorative dash before label */
+.dash {
+  color: var(--highlight);
+  font-weight: 700;
+}
+
+/* Main title */
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-top: 10px;
+  color: #111;
+}
+
+/* Gradient highlight inside title */
+.title span {
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

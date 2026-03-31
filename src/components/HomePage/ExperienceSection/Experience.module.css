@@ -1,251 +1,30 @@
 /*
  * File: src/components/HomePage/ExperienceSection/Experience.module.css
  * Author: Harshita Gawas
- * Description: Styles for the Experience section of the Portfolio application.
+ * Description: Experience section component of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 29/03/2026
+ * Modified on: 31/03/2026
  */
 
-/* ─── Main section wrapper ─── */
-/* Holds the entire experience section and controls positioning */
+/* Main section wrapper */
 .section {
   position: relative;
   width: 100%;
 }
 
-/* ─── Sticky container ─── */
-/* Stays fixed in viewport while scrolling happens inside section */
+/* Sticky container */
 .stickyBox {
   position: sticky;
   top: 0;
 
-  min-height: 100vh; /* ensures at least full screen height */
-  height: auto; /* allows expansion if content grows */
+  min-height: 100vh;
+  height: auto;
 
   display: flex;
   flex-direction: column;
-
-  justify-content: center; /* vertically centers content inside viewport */
-
-  padding: 0 clamp(20px, 5vw, 80px); /* responsive horizontal padding */
-
-  overflow: hidden; /* prevents horizontal scroll bleed */
-}
-
-/* ─── Header wrapper ─── */
-/* Controls spacing between header and timeline/cards */
-.header {
-  margin-bottom: clamp(24px, 4vw, 40px);
-}
-
-/* ─── Decorative dash before label ─── */
-.dash {
-  color: var(--highlight);
-  font-weight: 700;
-}
-
-/* ─── Small label text (e.g., "My Journey") ─── */
-.label {
-  font-size: 0.85rem;
-  color: var(--highlight);
-  margin: 0px; /* removes default browser margin */
-}
-
-/* ─── Main title ─── */
-.title {
-  font-size: clamp(2rem, 4vw, 3rem); /* responsive scaling */
-  font-weight: 800;
-  margin-top: 10px; /* controlled spacing from label */
-  color: #111;
-}
-
-/* ─── Gradient highlight inside title ─── */
-.title span {
-  background: linear-gradient(180deg, #f7b006, #cc5f69);
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent; /* makes gradient visible */
-}
-
-/* ─── Wrapper for horizontal track ─── */
-/* Clips overflow and centers content vertically */
-.trackWrapper {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-/* ─── Horizontal scrolling track ─── */
-/* This is the element that moves via translateX */
-.track {
-  display: flex;
-
-  align-items: stretch; /* ensures equal height cards */
-
-  gap: clamp(16px, 2.5vw, 28px); /* spacing between cards */
-
-  width: max-content; /* allows horizontal expansion */
-}
-
-/* ─── Column wrapper (each timeline item) ─── */
-/* Contains date, dot, line, and card */
-.column {
-  flex-shrink: 0; /* prevents shrinking in flex */
-
-  width: clamp(260px, 22vw, 340px); /* responsive card width */
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: stretch; /* ensures card stretches to equal height */
-}
-
-/* ─── Timeline date label ─── */
-/* Positioned above dot and centered */
-.timelineDate {
-  font-size: 0.8rem;
-  font-weight: 700;
-
-  text-align: center;
-
-  width: 100%;
-  display: flex;
-  justify-content: center; /* ensures perfect horizontal centering */
-
-  margin-bottom: 8px;
-}
-
-/* ─── Dot + connecting line container ─── */
-.dotRow {
-  position: relative;
-
-  width: 100%;
-  height: 16px;
-
-  margin-bottom: 16px;
-
-  display: flex;
-  justify-content: center; /* centers dot horizontally */
-}
-
-/* ─── Timeline dot ─── */
-.dot {
-  width: 10px;
-  height: 10px;
-
-  background: var(--highlight);
-  border-radius: 50%;
-
-  z-index: 2; /* ensures dot appears above line */
-}
-
-/* ─── Connecting line between dots ─── */
-/* Extends from current dot to next column */
-.line {
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  height: 2px;
-
-  width: calc(100% + clamp(16px, 2.5vw, 28px));
-  /* extends into next column (gap included) */
-
-  background: var(--border-color);
-
-  transform: translateY(-50%);
-  transform-origin: left; /* ensures expansion happens to the right */
-
-  z-index: 1;
-}
-
-/* ─── Remove line for last column ─── */
-.column:last-child .line {
-  display: none;
-}
-
-/* ─── Experience card ─── */
-.card {
-  width: 100%;
-  position: relative; /* needed for absolute icon positioning */
-
-  background: var(--section-background);
-
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-
-  padding: clamp(20px, 3vw, 32px);
-
-  display: flex;
-  flex-direction: column;
-
-  flex: 1; /* makes all cards equal height */
-  justify-content: center; /* vertically centers content */
-
-  gap: 10px;
-
-  transition:
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
-}
-
-/* ─── Card type icon (top-right corner) ─── */
-.cardTypeIcon {
-  position: absolute;
-
-  top: 14px;
-  right: 14px;
-
-  width: 34px;
-  height: 34px;
-
-  border-radius: 50%;
-
-  border: 1px solid var(--border-color);
-
-  background: var(--section-background);
-
-  color: var(--highlight);
-
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
 
-  font-size: 0.95rem;
-}
+  padding: 0 clamp(20px, 5vw, 80px);
 
-/* ─── Hover effect ─── */
-.card:hover {
-  transform: translateY(-4px);
-}
-
-/* ─── Work card styling ─── */
-.cardWork {
-  border: 2px solid var(--highlight);
-}
-
-/* ─── Education card styling ─── */
-.cardEducation {
-  border: 1px dashed var(--border-color);
-  background: rgba(255, 255, 255, 0.6);
-}
-
-/* ─── Role title ─── */
-.role {
-  font-weight: 700;
-}
-
-/* ─── Company name ─── */
-.company {
-  color: var(--highlight);
-}
-
-/* ─── Description text ─── */
-.desc {
-  font-size: 0.9rem;
-  opacity: 0.85;
+  overflow: hidden;
 }

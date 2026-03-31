@@ -5,6 +5,8 @@
  * Created on: 20/03/2026
  * Last Modified: 29/03/2026
 */
+
+/* Resume navigation bar */
 .resumeNavbar {
   position: fixed;
   top: 0;
@@ -18,7 +20,7 @@
   background: #ffffff;
   border-bottom: 1px solid #d9cebe;
 }
-
+/* Back button */
 .backButton {
   display: inline-flex;
   align-items: center;
@@ -34,16 +36,16 @@
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
-
+/* Back button hover state */
 .backButton:hover {
   filter: brightness(1.08);
 }
-
+/* Back button focus state */
 .backButton:focus-visible {
   outline: 2px solid #1e6b63;
   outline-offset: 2px;
 }
-
+/* Download button */
 .downloadButton {
   border: 0;
   border-radius: 999px;
@@ -57,16 +59,16 @@
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
-
+/* Download button hover state */
 .downloadButton:hover {
   filter: brightness(1.08);
 }
-
+/* Download button focus state */
 .downloadButton:focus-visible {
   outline: 2px solid #1e6b63;
   outline-offset: 2px;
 }
-
+/* Print styles */
 @media print {
   .resumeNavbar {
     display: none !important;

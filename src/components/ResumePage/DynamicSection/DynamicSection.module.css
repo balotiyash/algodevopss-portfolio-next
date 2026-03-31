@@ -6,6 +6,8 @@
  * Last Modified: 29/03/2026
 */
 
+/* Purpose: Provides container and heading styles shared by each DynamicSection instance. */
+
 /* ─── SECTION WRAPPER ─── */
 .section {
   margin-bottom: 1.75rem;

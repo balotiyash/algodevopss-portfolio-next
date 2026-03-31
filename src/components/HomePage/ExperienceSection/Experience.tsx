@@ -3,15 +3,16 @@
  * Author: Harshita Gawas
  * Description: Experience section component of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 21/03/2026
+ * Modified on: 31/03/2026
  */
 
 "use client"; // ensures this component runs on client-side (needed for scroll + DOM APIs)
 
 import React, { useRef, useEffect, useState } from "react";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa6"; // icons for work & education
 import { experiences } from "@/data/Experience"; // data source
-import styles from "./Experience.module.css"; // scoped CSS module
+import styles from "./Experience.module.css"; // section layout styles
+import { ExperienceHeader } from "./ExperienceHeader";
+import { ExperienceTrack } from "./ExperienceTrack";
 
 export const Experience: React.FC = () => {
   // reference to entire section (used to calculate scroll position)
@@ -126,69 +127,14 @@ export const Experience: React.FC = () => {
     >
       {/* Sticky container — stays fixed while section scrolls */}
       <div className={styles.stickyBox}>
-        {/* Section header */}
-        <div className={styles.header}>
-          {/* small decorative dash + label */}
-          <span className={styles.dash}>—</span> My Journey
-          {/* main title */}
-          <h2 className={styles.title}>
-            From Learning to <span>Building</span>
-          </h2>
-        </div>
-
-        {/* Wrapper that clips horizontal overflow */}
-        <div className={styles.trackWrapper}>
-          {/* Horizontal track that moves left/right */}
-          <div
-            ref={trackRef} // reference for width calculation
-            className={styles.track}
-            style={{ transform: `translateX(${translateX}px)` }} // apply horizontal movement
-          >
-            {/* Loop through experience data */}
-            {experiences.map((exp) => (
-              <div key={exp.id} className={styles.column}>
-                {/* Date label (above timeline dot) */}
-                <span className={styles.timelineDate}>
-                  {exp.from} – {exp.to}
-                </span>
-
-                {/* Timeline dot + connecting line */}
-                <div className={styles.dotRow}>
-                  <span className={styles.dot} /> {/* center dot */}
-                  <span className={styles.line} />{" "}
-                  {/* connecting line to next */}
-                </div>
-
-                {/* Experience card */}
-                <div
-                  className={`${styles.card} ${
-                    exp.type === "education"
-                      ? styles.cardEducation // dashed style
-                      : styles.cardWork // solid highlight style
-                  }`}
-                >
-                  {/* Icon based on type */}
-                  <span className={styles.cardTypeIcon} aria-hidden="true">
-                    {exp.type === "education" ? (
-                      <FaGraduationCap /> // education icon
-                    ) : (
-                      <FaBriefcase /> // work icon
-                    )}
-                  </span>
-
-                  {/* Role title */}
-                  <h3 className={styles.role}>{exp.role}</h3>
-
-                  {/* Company / institution */}
-                  <p className={styles.company}>{exp.company}</p>
-
-                  {/* Description */}
-                  <p className={styles.desc}>{exp.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Header for the experience section */}
+        <ExperienceHeader />
+        {/* Track */}
+        <ExperienceTrack
+          trackRef={trackRef}
+          translateX={translateX}
+          items={experiences}
+        />
       </div>
     </section>
   );

@@ -1,23 +1,32 @@
+/**
+ * File: src/components/Footer/Responsiveness.module.css
+ * Author: Harshita Gawas
+ * Description: Responsive styles for the Footer section.
+ * Created on: 20/03/2026
+ * Last Modified: 31/03/2026
+ */
+
 @media (max-width: 768px) {
+  /*footer grid  */
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;
     text-align: center; /* center text globally */
   }
-
+  /* Brand column */
   .brand,
   .column {
     align-items: center; /* center flex children */
   }
-
+  /* Brand description */
   .brandDesc {
     max-width: 100%;
   }
-
+  /* Social icons */
   .socials {
     justify-content: center;
   }
-
+  /* Connect with me */
   .linkList,
   .connectList {
     align-items: center;
@@ -27,7 +36,7 @@
     justify-content: center;
     text-align: center;
   }
-
+  /* bottom bar */
   .bottom {
     flex-direction: column;
     align-items: center;
@@ -36,6 +45,7 @@
 }
 /* ─── Mobile — single column ─── */
 @media (max-width: 500px) {
+  /* bottom bar */
   .bottom {
     flex-direction: column;
     align-items: center;
@@ -43,6 +53,7 @@
 }
 /* ─── Very small screens ─── */
 @media (max-width: 400px) {
+  /* Footer padding */
   .footer {
     padding: 40px 16px 0;
   }

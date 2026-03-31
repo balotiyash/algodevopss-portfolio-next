@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
         <div className={`${styles.visualArea} ${responsiveStyles.visualArea}`}>
           {/* Background circle */}
           <div
-            className={`${styles.yellowCircle} ${responsiveStyles.yellowCircle}`}
+            className={`${styles.purpleCircle} ${responsiveStyles.purpleCircle}`}
           />
 
           {/* Rotating badge */}
@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
                 height="20"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="currentColor"
+                stroke="#ede9fe"
                 strokeWidth="2"
               >
                 <path d="M7 17L17 7M17 7H7M17 7V17" />

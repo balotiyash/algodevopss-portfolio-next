@@ -14,6 +14,7 @@ import { Marquee } from "@/components/HomePage/HeroSection/Marquee";
 import { Projects } from "@/components/HomePage/ProjectSection/Projects";
 import TechStackSection from "@/components/HomePage/TechStackSection/TechStackSection";
 
+// root page
 export default function Home() {
   return (
     <main>

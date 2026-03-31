@@ -12,7 +12,6 @@ export interface ResumeExperience {
   location: string;
   from: string;
   to: string;
-  blah?: string;
   bullets: string[];
   details?: string;
   techStack?: string[];
@@ -52,7 +51,7 @@ export const workExperience: ResumeExperience[] = [
       "Performance dashboards",
       "Cross-channel attribution",
     ],
-    blah: "This is a test",
+
     website: "https://example.com",
     images: [
       "/pngs/img1.png",
@@ -90,7 +89,7 @@ export const workExperience: ResumeExperience[] = [
       "Lead generation funnels",
       "Social media management",
     ],
-    blah: "This is a test2",
+
 
     website: "https://example.com",
     images: ["/work1.png", "/work2.png"],

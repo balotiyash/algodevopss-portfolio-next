@@ -23,7 +23,7 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
-
+/* styling for each dynamic resume section */
 .resumeBlock {
   break-inside: avoid;
   page-break-inside: avoid;
@@ -78,6 +78,7 @@
     background-image: none !important;
   }
 
+  /* font stylings */
   .resumeBlock,
   .paper h1,
   .paper h2,

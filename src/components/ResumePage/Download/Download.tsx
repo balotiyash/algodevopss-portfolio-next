@@ -21,6 +21,7 @@ export function Download() {
       className={`${styles.resumeNavbar} no-print`}
       aria-label="Resume navigation"
     >
+      {/* back btn on resume page */}
       <Link
         href="/"
         className={styles.backButton}
@@ -28,7 +29,7 @@ export function Download() {
       >
         <FiArrowLeft aria-hidden="true" />
       </Link>
-
+      {/* download btn on resume page */}
       <button
         type="button"
         onClick={handleDownload}

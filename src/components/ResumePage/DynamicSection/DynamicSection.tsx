@@ -13,6 +13,8 @@ import { EntryItem } from "./EntryItem";
 import { SectionHeader } from "./SectionHeader";
 import { DETAIL_PRIORITY_KEYS, HEADER_KEYS, getHeaderValues } from "./helpers";
 
+// Purpose: Render one resume section from generic data and support both accordion and always-expanded modes.
+
 /**
  * Props for DynamicSection
  */
@@ -78,6 +80,7 @@ export const DynamicSection: React.FC<DynamicSectionProps> = ({
   }
 
   return (
+    // The section is labelled by its heading for assistive technologies.
     <section
       className={styles.section}
       aria-labelledby={`${sectionId}-heading`}
@@ -127,6 +130,7 @@ export const DynamicSection: React.FC<DynamicSectionProps> = ({
         );
 
         return (
+          // EntryItem encapsulates each row + details content block.
           <EntryItem
             key={itemId}
             item={item}
@@ -153,6 +157,7 @@ export const DynamicSection: React.FC<DynamicSectionProps> = ({
  * Extract + filter + sort detail fields
  */
 const getDetailEntries = (item: Record<string, unknown>): DetailEntry[] => {
+  // Drop non-renderable values and fields already used in the row header.
   const entries = Object.entries(item).filter(([key, value]) => {
     if (HEADER_KEYS.has(key) || key === "id") return false;
 
@@ -168,6 +173,7 @@ const getDetailEntries = (item: Record<string, unknown>): DetailEntry[] => {
     return true;
   });
 
+  // Keep known fields in a deterministic order; fallback is alphabetical.
   return entries.sort(([leftKey], [rightKey]) => {
     const leftIndex = DETAIL_PRIORITY_KEYS.indexOf(leftKey);
     const rightIndex = DETAIL_PRIORITY_KEYS.indexOf(rightKey);

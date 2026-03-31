@@ -23,10 +23,8 @@ export const Marquee: React.FC = () => {
 
   return (
     <div className={styles.bannerWrapper}>
-      {/* Diagonal green strip */}
-      <div className={styles.greenStrip} />
-      {/* Yellow bar */}
-      <div className={styles.yellowBar}>
+      {/* Purple bar */}
+      <div className={styles.bar}>
         <div className={styles.marqueeTrack}>
           {items.map((skill, i) => (
             <span key={i} className={styles.item}>

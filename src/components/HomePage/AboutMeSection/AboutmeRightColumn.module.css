@@ -1,150 +1,10 @@
 /*
- * File: src/components/HomePage/AboutMeSection/AboutMe.module.css
+ * File: src/components/HomePage/AboutMeSection/AboutMeRightColumn.module.css
  * Author: Harshita Gawas
- * Description: About Me section styles for the Portfolio application.
+ * Description: About Me section Right column styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 31/03/2026
  */
-
-/* ─── About Me Section ─── */
-/* main section */
-.section {
-  background-color: var(--section-background);
-  padding: 5rem 2rem;
-  overflow: hidden;
-}
-/* Container for the section content */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 3rem;
-}
-
-/* ─── Left Column: Image with skill tags ─── */
-.imageCol {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*circle wrapper behind portrait */
-.circleWrapper {
-  position: relative;
-  width: clamp(280px, 28vw, 420px);
-  height: clamp(280px, 28vw, 420px);
-}
-/* circle */
-.circle {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--highlight);
-  overflow: hidden;
-  position: relative;
-}
-/* image to display on circle */
-.circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-}
-
-/* ─── Floating skill tags around the image ─── */
-.skillTags {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-/* individual skill tag */
-.skillTag {
-  position: absolute;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-
-  animation: floatTag 4s ease-in-out infinite;
-}
-
-/* Hover effect */
-.skillTag:hover {
-  transform: scale(1.08) translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-/* skill tag animation */
-@keyframes floatTag {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* Dark tag style */
-.tagDark {
-  background: #ede9fe;
-  color: #5b4bd1;
-}
-
-/* Light tag style */
-.tagLight {
-  background-color: #fff;
-  color: var(--heading-color);
-}
-
-/* Highlight tag style */
-.tagHighlight {
-  background-color: var(--highlight);
-  color: #fff;
-}
-
-/* Individual tag positions */
-.tag1 {
-  top: 8%;
-  right: -10%;
-  transform: translateX(60%);
-}
-.tag2 {
-  top: 28%;
-  right: -20%;
-}
-.tag3 {
-  top: 25%;
-  left: -15%;
-}
-.tag4 {
-  bottom: 30%;
-  left: -20%;
-}
-.tag5 {
-  bottom: 18%;
-  left: -8%;
-}
-.tag6 {
-  bottom: 35%;
-  right: -18%;
-}
-.tag7 {
-  bottom: 10%;
-  right: -5%;
-}
-
 /* ─── Right Column: Text content ─── */
 .textCol {
   color: #fff;
@@ -181,7 +41,7 @@
 }
 
 .heading .highlight {
-  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,19 +63,19 @@
   gap: 2.5rem;
   margin-bottom: 2.5rem;
 }
-
+/* Individual stat item */
 .statItem {
   display: flex;
   flex-direction: column;
 }
-
+/* Stat number */
 .statNumber {
   font-family: var(--font-heading);
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 700;
   color: var(--highlight);
 }
-
+/* Stat label */
 .statLabel {
   font-family: var(--font-body);
   font-size: 0.8rem;

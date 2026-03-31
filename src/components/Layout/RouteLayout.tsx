@@ -26,7 +26,7 @@ export function RouteLayout({ children }: RouteLayoutProps) {
   if (isResumeRoute || isProjectsRoute) {
     return <>{children}</>;
   }
-
+  // portfolio page layout with navbar, side icons and footer. Other routes (resume, more projects) have a simpler layout without these elements.
   return (
     <>
       <Navbar />

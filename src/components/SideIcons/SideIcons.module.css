@@ -24,7 +24,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background: var(--section-background);
+  background: #ede9fe;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   display: flex;
@@ -43,9 +43,10 @@
 
 /* ─── Active state — green highlight ─── */
 .dot.active {
-  background: linear-gradient(180deg, #f7b006, #cc5f69);
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--highlight) 45%, #000000 35%);
 
-  box-shadow: 0 4px 16px var(--cta-secondary) / 0.35;
+  color: white;
 }
 
 /* ─── icon inside dot ─── */

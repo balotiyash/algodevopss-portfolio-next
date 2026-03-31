@@ -1,3 +1,11 @@
+/**
+ * File: src/components/Navbar/Responsiveness.module.css
+ * Author: Harshita Gawas
+ * Description: Responsive styles for the navbar.
+ * Created on: 20/03/2026
+ * Last Modified: 31/03/2026
+ */
+
 @media (max-width: 768px) {
   .links,
   .cta {

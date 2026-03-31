@@ -19,6 +19,8 @@ import {
 } from "./helpers";
 import { MediaCard } from "./MediaCard";
 
+// Purpose: Render one dynamic detail field by detecting its value shape (text, links, media, arrays, nested objects).
+
 /**
  * Handles rendering of each field dynamically
  */
@@ -33,8 +35,10 @@ export const DetailField: React.FC<DetailFieldProps> = ({
   value,
   collapsible,
 }) => {
+  // Skip empty values so no blank UI blocks are rendered.
   if (value === null || value === undefined || value === "") return null;
 
+  // Build display metadata from the raw data key.
   const label = formatLabel(fieldKey);
   const showLabel = !HIDDEN_LABEL_KEYS.has(fieldKey);
 
@@ -61,6 +65,7 @@ export const DetailField: React.FC<DetailFieldProps> = ({
    * String values
    */
   if (typeof value === "string") {
+    // Media-like URL (image/pdf/file) is rendered as a card preview.
     if (isMediaLike(value)) {
       return (
         <div className={styles.detailBlock}>
@@ -72,6 +77,7 @@ export const DetailField: React.FC<DetailFieldProps> = ({
       );
     }
 
+    // Generic URL string is rendered as a clickable link.
     if (isLinkLike(value)) {
       return (
         <div className={styles.detailBlock}>
@@ -88,6 +94,7 @@ export const DetailField: React.FC<DetailFieldProps> = ({
       );
     }
 
+    // Plain text string fallback.
     return (
       <div className={styles.detailBlock}>
         {showLabel && <p className={styles.label}>{label}</p>}
@@ -112,6 +119,7 @@ export const DetailField: React.FC<DetailFieldProps> = ({
    * Array handling (images, links, bullets, etc.)
    */
   if (Array.isArray(value)) {
+    // Ignore empty arrays.
     if (value.length === 0) return null;
 
     // Media arrays

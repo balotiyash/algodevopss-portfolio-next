@@ -1,0 +1,99 @@
+/*
+ * File: src/components/HomePage/ProjectSection/ProjectsHeader.module.css
+ * Author: Harshita Gawas
+ * Description: Project header styles of the Portfolio application.
+ * Created on: 29/03/2026
+ * Last Modified: 31/03/2026
+ */
+
+/* Header row */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Decorative dash */
+.dash {
+  color: var(--highlight);
+  font-weight: 700;
+}
+
+/* Main heading */
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--heading-color);
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Highlighted word in heading */
+.highlight {
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* View all button */
+.viewAll {
+  display: flex;
+  align-items: center;
+  background: var(--highlight);
+  border-radius: 50px;
+  gap: 4px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.viewBtnText {
+  background: #eef2ff;
+  color: #000;
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.arrowCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

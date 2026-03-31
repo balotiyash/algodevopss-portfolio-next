@@ -18,7 +18,7 @@ export interface ResumeEducation {
   institution: string;
   location: string;
   status: string;
-  from?: string;
+  from?: string; //duration
   to?: string;
   board?: string;
   semesters?: SemesterData[];

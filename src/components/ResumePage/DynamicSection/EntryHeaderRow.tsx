@@ -10,6 +10,8 @@ import React, { KeyboardEvent } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import styles from "./EntryItem.module.css";
 
+// Purpose: Render the clickable top row for a resume entry, including title/meta and chevron state.
+
 interface EntryHeaderRowProps {
   collapsible: boolean;
   isOpen: boolean;
@@ -43,6 +45,7 @@ export const EntryHeaderRow: React.FC<EntryHeaderRowProps> = ({
   onKeyDown,
 }) => {
   return (
+    // Row acts as an accessible button only when the section is collapsible.
     <div
       className={`${styles.row} ${!collapsible ? styles.staticRow : ""}`}
       role={collapsible ? "button" : undefined}
@@ -54,6 +57,7 @@ export const EntryHeaderRow: React.FC<EntryHeaderRowProps> = ({
     >
       {/* LEFT CONTENT */}
       <div className={styles.left}>
+        {/* Show main title only in collapsible mode; static mode keeps content simplified. */}
         {collapsible && (
           <h3 className={styles.title}>
             {mainTitle || `${title} ${index + 1}`}

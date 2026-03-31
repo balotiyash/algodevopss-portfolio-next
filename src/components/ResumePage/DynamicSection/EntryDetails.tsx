@@ -11,6 +11,8 @@ import styles from "./EntryItem.module.css";
 import detailStyles from "./DetailField.module.css";
 import { DetailField } from "./DetailField";
 
+// Purpose: Render entry details in either animated accordion mode or always-visible static mode.
+
 type DetailEntry = [string, unknown];
 
 interface EntryDetailsProps {
@@ -32,6 +34,7 @@ export const EntryDetails: React.FC<EntryDetailsProps> = ({
   itemId,
 }) => {
   return collapsible ? (
+    // Accordion mode: this wrapper animates open/close with height + opacity styles.
     <div
       id={detailsId}
       className={`${styles.details} ${styles.noPrint} ${
@@ -40,6 +43,7 @@ export const EntryDetails: React.FC<EntryDetailsProps> = ({
       aria-hidden={!isOpen}
     >
       <div className={styles.detailsInner}>
+        {/* Render each detail row with the generic field renderer. */}
         {detailEntries.map(([key, value]) => (
           <DetailField
             key={`${itemId}-${key}`}
@@ -52,6 +56,7 @@ export const EntryDetails: React.FC<EntryDetailsProps> = ({
     </div>
   ) : (
     /* ─── STATIC MODE (NO DROPDOWN STYLING) ─── */
+    // Static mode: keep details always visible with print/ATS-friendly structure.
     <div className={`${styles.staticContent} ${detailStyles.staticContent}`}>
       {detailEntries.map(([key, value]) => (
         <DetailField

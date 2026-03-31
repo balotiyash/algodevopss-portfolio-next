@@ -13,18 +13,7 @@
   margin-top: 0px;
 }
 
-.greenStrip {
-  position: absolute;
-  top: -20px;
-  left: -5%;
-  width: 110%;
-  height: 50px;
-  background: var(--cta-primary);
-  transform: rotate(-2deg);
-  z-index: 1;
-}
-
-.yellowBar {
+.bar {
   position: relative;
   z-index: 2;
   background: var(--highlight);
@@ -45,14 +34,14 @@
   gap: 24px;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--section-background);
   white-space: nowrap;
   padding: 0 32px;
   letter-spacing: -0.01em;
 }
 
 .star {
-  color: var(--cta-primary);
+  color: var(--section-background);
   font-size: 1.2em;
 }
 

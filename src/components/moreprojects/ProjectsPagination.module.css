@@ -1,0 +1,40 @@
+/**
+ * File: src/components/MoreProjects/ProjectsPagination.module.css
+ * Author: Harshita Gawas
+ * Description: Projects pagination styles for the More Projects page.
+ * Created on: 20/03/2026
+ * Last Modified: 31/03/2026
+ */
+/* Purpose: Styles for Prev/page/Next pagination controls used in MoreProjects. */
+
+.pagination {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  min-width: 38px;
+  height: 38px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--heading-color);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pageButton[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background: var(--highlight);
+  color: #fff;
+  border-color: var(--cta-primary);
+}

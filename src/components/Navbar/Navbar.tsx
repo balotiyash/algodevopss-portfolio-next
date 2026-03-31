@@ -23,22 +23,24 @@ export const Navbar: React.FC = () => {
   }, []);
 
   return (
+    // Nav wrapper
     <nav
       className={`${styles.navWrapper} ${responsiveStyles.navWrapper} ${isScrolled ? `${styles.scrolled} ${responsiveStyles.scrolled}` : ""}`}
     >
+      {/* Nav container */}
       <div
         className={`${styles.navContainer} ${responsiveStyles.navContainer}`}
       >
-        <div className={styles.logoArea}>
-          {/* <div className={styles.logoIcon}>H</div> */}
-          <span className={styles.logoText}>John Doe</span>
-        </div>
+        {/* Logo area */}
+
+        <span className={styles.logoText}>John Doe</span>
+        {/* resume page link */}
         <Link href="/resume">
           <button className={`${styles.cta} ${responsiveStyles.cta}`}>
             View My Resume
           </button>
         </Link>
-
+        {/* Hamburger button */}
         <button
           className={`${styles.hamburger} ${responsiveStyles.hamburger}`}
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -55,7 +57,7 @@ export const Navbar: React.FC = () => {
           />
         </button>
       </div>
-
+      {/* Mobile menu */}
       {mobileOpen && (
         <div className={`${styles.mobileMenu} ${responsiveStyles.mobileMenu}`}>
           <Link href="/resume">
