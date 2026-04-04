@@ -20,7 +20,7 @@ import { DETAIL_PRIORITY_KEYS, HEADER_KEYS, getHeaderValues } from "./helpers";
  */
 interface DynamicSectionProps {
   title: string;
-  data: Array<Record<string, unknown>>;
+  data: readonly object[];
 
   /**
    * Controls dropdown behavior
@@ -88,7 +88,8 @@ export const DynamicSection: React.FC<DynamicSectionProps> = ({
       {/* Section Heading */}
       <SectionHeader id={`${sectionId}-heading`} title={title} />
 
-      {data.map((item, index) => {
+      {data.map((rawItem, index) => {
+        const item = rawItem as Record<string, unknown>;
         /**
          * Extract header values (title, subtitle, meta)
          */

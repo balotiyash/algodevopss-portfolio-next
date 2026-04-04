@@ -14,6 +14,9 @@ import { heroData } from "@/data/Hero";
 export const metadata: Metadata = {
   title: `${heroData.name} | Portfolio`,
   description: heroData.description,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
