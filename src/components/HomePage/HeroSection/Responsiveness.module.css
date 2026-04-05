@@ -38,6 +38,22 @@
   }
 }
 
+@media (max-height: 800px) {
+  .heroSection {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .portraitWrapper {
+    max-width: 280px;
+  }
+
+  .purpleCircle {
+    width: 240px;
+    height: 240px;
+  }
+}
+
 @media (max-width: 640px) {
   .title {
     font-size: 2rem;
@@ -65,7 +81,7 @@
 @media (max-width: 430px) {
   .heroSection {
     min-height: auto;
-    padding: 40px 16px;
+    padding: 60px 16px;
   }
 
   .container {
@@ -126,20 +142,5 @@
   .hireBadgeInner {
     width: 25px;
     height: 25px;
-  }
-}
-@media (max-height: 800px) {
-  .heroSection {
-    min-height: auto;
-    padding: 40px 20px;
-  }
-
-  .portraitWrapper {
-    max-width: 280px;
-  }
-
-  .purpleCircle {
-    width: 240px;
-    height: 240px;
   }
 }

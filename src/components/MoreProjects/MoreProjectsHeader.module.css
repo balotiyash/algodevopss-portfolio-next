@@ -54,3 +54,11 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-height: 600px) {
+  .backButton {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+}

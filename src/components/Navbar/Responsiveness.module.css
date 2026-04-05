@@ -19,11 +19,14 @@
   .mobileMenu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background: var(--page-background);
     padding: 16px 24px 24px;
     gap: 16px;
     border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
   }
 
   .mobileMenu a {
@@ -35,11 +38,11 @@
   }
 
   .mobileMenu .activeLink {
-    color: var(--cta-secondary) !important;
+    color: var(--highlight) !important;
   }
 
   .mobileCta {
-    background: var(--cta-primary);
+    background: var(--highlight);
     color: var(--page-background);
     border: none;
     padding: 12px 24px;

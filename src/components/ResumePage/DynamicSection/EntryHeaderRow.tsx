@@ -44,6 +44,8 @@ export const EntryHeaderRow: React.FC<EntryHeaderRowProps> = ({
   toggleItem,
   onKeyDown,
 }) => {
+  const isExperienceSection = title === "Experience";
+
   return (
     // Row acts as an accessible button only when the section is collapsible.
     <div
@@ -59,12 +61,22 @@ export const EntryHeaderRow: React.FC<EntryHeaderRowProps> = ({
       <div className={styles.left}>
         {/* Show main title only in collapsible mode; static mode keeps content simplified. */}
         {collapsible && (
-          <h3 className={styles.title}>
-            {mainTitle || `${title} ${index + 1}`}
-          </h3>
+          <div className={styles.titleRow}>
+            <h3 className={styles.title}>
+              {mainTitle || `${title} ${index + 1}`}
+            </h3>
+
+            <span className={styles.chevron} aria-hidden="true">
+              {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+            </span>
+          </div>
         )}
 
         {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
+
+        {isExperienceSection && meta ? (
+          <p className={styles.metaInlineMobile}>{meta}</p>
+        ) : null}
 
         {/* Preview bullets (collapsed view) */}
         {defaultBullets ? (
@@ -78,14 +90,15 @@ export const EntryHeaderRow: React.FC<EntryHeaderRowProps> = ({
 
       {/* RIGHT SIDE */}
       <div className={styles.right}>
-        {meta ? <span className={styles.meta}>{meta}</span> : null}
-
-        {/* Chevron only if collapsible */}
-        {collapsible && (
-          <span className={styles.chevron} aria-hidden="true">
-            {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+        {meta ? (
+          <span
+            className={`${styles.meta} ${
+              isExperienceSection ? styles.metaDesktopOnly : ""
+            }`}
+          >
+            {meta}
           </span>
-        )}
+        ) : null}
       </div>
     </div>
   );

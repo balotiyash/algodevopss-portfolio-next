@@ -11,12 +11,12 @@
 .page {
   width: min(1200px, 100%);
   margin: 0 auto;
-  padding: 130px 24px 80px;
+  padding: 110px 24px 80px;
 }
 
 /* Responsive padding on smaller screens - reduce top/bottom spacing for compact layout */
 @media (max-width: 900px) {
   .page {
-    padding: 110px 18px 60px;
+    padding: 80px 18px 60px;
   }
 }

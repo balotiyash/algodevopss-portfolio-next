@@ -34,3 +34,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 430px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
