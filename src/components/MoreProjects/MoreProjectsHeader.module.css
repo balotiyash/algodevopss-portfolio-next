@@ -1,0 +1,64 @@
+/**
+ * File: src/components/MoreProjects/MoreProjectsHeader.module.css
+ * Author: Harshita Gawas
+ * Description: More Projects page Header component styles  for the portfolio application.
+ * Created on: 20/03/2026
+ * Last Modified: 31/03/2026
+ */
+
+/* Purpose: Styles for back button and page title header. */
+
+.backButtonWrap {
+  margin-bottom: 14px;
+}
+
+/* Back navigation button */
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: #1d2e2c;
+  color: #fff;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.backButton:hover {
+  filter: brightness(1.08);
+}
+
+.backButton:focus-visible {
+  outline: 2px solid #1e6b63;
+  outline-offset: 2px;
+}
+
+/* Page title with highlighted word */
+.title {
+  margin: 0 0 36px;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--heading-color);
+  line-height: 1.15;
+}
+
+/* Gradient highlight on specific word */
+.title span {
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-height: 600px) {
+  .backButton {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+}

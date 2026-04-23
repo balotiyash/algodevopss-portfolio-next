@@ -1,0 +1,26 @@
+/** 
+ * File: src/components/ResumePage/DynamicSection/DynamicSection.module.css
+ * Author: Harshita Gawas
+ * Description: Dynamic section component styles for the Resume page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+*/
+
+/* Purpose: Provides container and heading styles shared by each DynamicSection instance. */
+
+/* ─── SECTION WRAPPER ─── */
+.section {
+  margin-bottom: 1.75rem;
+  color: #000;
+}
+
+/* Section heading (ATS style) */
+.heading {
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #000;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
