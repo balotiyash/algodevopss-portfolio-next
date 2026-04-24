@@ -1,0 +1,30 @@
+/*
+ * File: src/components/HomePage/ExperienceSection/Experience.module.css
+ * Author: Harshita Gawas
+ * Description: Experience section component of the Portfolio application.
+ * Created on: 19/03/2026
+ * Modified on: 31/03/2026
+ */
+
+/* Main section wrapper */
+.section {
+  position: relative;
+  width: 100%;
+}
+
+/* Sticky container */
+.stickyBox {
+  position: sticky;
+  top: 0;
+
+  min-height: 100vh;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 clamp(20px, 5vw, 80px);
+
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+/*
+ * File: src/app/resume/layout.module.css
+ * Author: Harshita Gawas
+ * Description: Layout styles for the Resume page.
+ * Created on: 20/03/2026
+ * Last Modified: 29/03/2026
+ */
+
+/* Route wrapper for resume page */
+.resumeLayout {
+  position: relative;
+}
+/* main resume page content styling */
+.content {
+  width: 100%;
+  padding-top: 64px;
+}
+
+@media print {
+  .content {
+    padding-top: 0;
+  }
+}

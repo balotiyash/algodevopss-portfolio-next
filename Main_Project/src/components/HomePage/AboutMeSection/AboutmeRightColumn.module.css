@@ -1,0 +1,139 @@
+/*
+ * File: src/components/HomePage/AboutMeSection/AboutMeRightColumn.module.css
+ * Author: Harshita Gawas
+ * Description: About Me section Right column styles for the Portfolio application.
+ * Created on: 15/03/2026
+ * Last Modified: 31/03/2026
+ */
+/* ─── Right Column: Text content ─── */
+.textCol {
+  color: #fff;
+}
+
+/* Subtitle line with dash */
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Small dash before subtitle */
+.dash {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: var(--highlight);
+  display: inline-block;
+}
+
+/* Main heading */
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+}
+
+.heading .highlight {
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description paragraph */
+.description {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+/* ─── Stats Row ─── */
+.stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* Individual stat item */
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+/* Stat number */
+.statNumber {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--highlight);
+}
+/* Stat label */
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-top: 0.2rem;
+}
+
+/* ─── Bottom Row: CTA + Signature ─── */
+.bottomRow {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Download CV button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  background-color: #ede9fe;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(to right, #e57a44, #45239b);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+/* Arrow circle inside the button */
+.arrowCircle {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Cursive signature text */
+.signature {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  background: linear-gradient(to right, #e57a44, #45239b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

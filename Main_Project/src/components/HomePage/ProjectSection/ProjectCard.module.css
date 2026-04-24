@@ -1,0 +1,100 @@
+/*
+ * File: src/components/HomePage/ProjectSection/ProjectsCard.module.css
+ * Author: Harshita Gawas
+ * Description: Project Card styles of the Portfolio application.
+ * Created on: 29/03/2026
+ * Last Modified: 31/03/2026
+ */
+
+/* Individual project card */
+.card {
+  background: var(--section-background);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image container */
+.imageWrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Project thumbnail */
+.image {
+  object-fit: cover;
+}
+
+/* Tags row */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+/* Individual tag pill */
+.tag {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.85rem;
+  border-radius: 50px;
+  background: #ede9fe;
+  color: #5b4bd1;
+}
+
+/* Project title */
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  padding: 0.5rem 1.25rem 0.75rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Link buttons */
+.links {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.linkBtn {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.linkBtn:hover {
+  background: linear-gradient(135deg, #6d5bd0, #ff7a5c);
+  border: none;
+  color: #fff;
+}
+
+.linkBtnPrimary {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  background: var(--highlight);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.linkBtnPrimary:hover {
+  opacity: 0.85;
+}

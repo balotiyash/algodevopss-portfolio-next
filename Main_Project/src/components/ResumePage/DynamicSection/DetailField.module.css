@@ -1,0 +1,82 @@
+/** 
+ * File: src/components/ResumePage/DynamicSection/DetailField.module.css
+ * Author: Harshita Gawas
+ * Description: Detail field typography and content styles.
+ * Created on: 29/03/2026
+ * Last Modified: 29/03/2026
+ */
+
+/* Purpose: Styles all dynamic detail blocks including labels, text, links, lists, and nested object cards. */
+
+/* Remove label styling heaviness */
+
+/* Text spacing */
+
+/* Bullet list clean */
+.staticContent .list {
+  padding-left: 1.2rem;
+}
+
+/* Spacing between blocks */
+.detailBlock + .detailBlock {
+  margin-top: 0.7rem;
+}
+
+/* Label (like TECH STACK, FEATURES) */
+.label {
+  margin: 0 0 0.18rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Paragraph text */
+.text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+/* Bullet list */
+.list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.list li + li {
+  margin-top: 0.22rem;
+}
+
+/* Links container */
+.linkList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+}
+
+/* Individual link */
+.link {
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+  word-break: break-word;
+}
+
+/* Object list (cards) */
+.objectList {
+  display: grid;
+  gap: 0.65rem;
+}
+
+/* Individual object card */
+.objectCard {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.4rem;
+  background: #fff;
+}
