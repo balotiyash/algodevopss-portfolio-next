@@ -8,6 +8,6 @@ export const summaryData = [
   {
     id: 1,
     description:
-      "Results-oriented marketing professional with over 5 years of experience in digital marketing, brand strategy, and content creation. Proven ability to drive brand growth, increase online engagement, and deliver data-driven results. Expert in utilizing digital tools and analytics to optimize marketing campaigns and achieve business objectives.",
+      "Aspiring computer engineer with hands-on experience in full stack development and a passion for research orientedprojects. Seeking a challenging role to apply modern tech stacks and contribute to impactful projects in a growthoriented environment."
   },
 ];

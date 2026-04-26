@@ -1,8 +1,8 @@
 /**
  * File: src/data/ResumeData/education.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Education data for the Resume page.
- * Created on: 16/03/2026
+ * Created on: 27/04/2026
  */
 
 // Each semester now carries its own certificate
@@ -31,20 +31,67 @@ export const education: ResumeEducation[] = [
     institution: "K.J. Somaiya Institute of Technology",
     location: "Mumbai",
     status: "Pursuing",
-    from: "2022",
-    to: "2026",
+    from: "2024",
+    to: "Present",
     board: "Mumbai University",
     semesters: [
       {
-        label: "Sem 1",
-        score: "9.5 SGPI",
-        certificate: "/Portfolio.pdf",
-      },
-      {
-        label: "Sem 2",
-        score: "9.7 SGPI",
-        certificate: "/Portfolio.pdf",
+        label: "Aggregate Score",
+        score: "9.5 SGPA",
+        // certificate: "/Portfolio.pdf",
       },
     ],
   },
+  {
+    id: 2,
+    degree: "Computer Engineering",
+    institution: "Vivekanand Education Society's Polytechnic",
+    location: "Mumbai",
+    status: "Completed",
+    from: "2022",
+    to: "2024",
+    board: "Maharashtra State Board of Technical Education",
+    semesters: [
+      {
+        label: "Percentage",
+        score: "91.49%",
+        // certificate: "/Portfolio.pdf",
+      },
+    ],
+  },
+  {
+    id: 3,
+    degree: "Electrical Engineering",
+    institution: "K.J. Somaiya Private I.T.I",
+    location: "Mumbai",
+    status: "Completed",
+    from: "2018",
+    to: "2020",
+    board: "National Council for Vocational Training",
+    semesters: [
+      {
+        label: "Percentage",
+        score: "87.86%",
+        // certificate: "/Portfolio.pdf",
+      },
+    ],
+  },
+  {
+    id: 4,
+    degree: "Secondary School Certificate (SSC)",
+    institution: "Adarsh Vidyalaya School",
+    location: "Mumbai",
+    status: "Completed",
+    from: "",
+    to: "2018",
+    board: "Maharashtra State Board of Secondary and Higher Secondary Education",
+    semesters: [
+      {
+        label: "Percentage",
+        score: "81.60%",
+        // certificate: "/Portfolio.pdf",
+      },
+    ],
+  },
+
 ];

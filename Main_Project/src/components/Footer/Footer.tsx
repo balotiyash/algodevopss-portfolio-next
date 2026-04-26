@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/Footer/Footer.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Footer component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 25/04/2026
  */
 
 "use client";
@@ -33,10 +33,10 @@ export const Footer: React.FC = () => {
 
   /* Contact details */
   const email = "balotiyash@gmail.com";
-  const phone = "+91 98765 43210";
-  const whatsappLink = `https://wa.me/919876543210`;
-  const address = "Mumbai, Maharashtra, India";
-  const mapLink = "https://maps.google.com/?q=Mumbai,Maharashtra,India";
+  const phone = "+91 9920780823";
+  const whatsappLink = `https://wa.me/919920780823`;
+  const address = "Chembur, Mumbai, Maharashtra, India";
+  const mapLink = "https://maps.app.goo.gl/aQkHBPzeBjBk6KR77";
 
   return (
     <footer className={`${styles.footer} ${responsivenessStyles.footer}`}>
@@ -44,12 +44,11 @@ export const Footer: React.FC = () => {
       <div className={`${styles.grid} ${responsivenessStyles.grid}`}>
         {/* Col 1 — Brand */}
         <div className={`${styles.brand} ${responsivenessStyles.brand}`}>
-          <h3 className={styles.brandName}>John Doe.</h3>
+          <h3 className={styles.brandName}>Yash Balotiya.</h3>
           <p
             className={`${styles.brandDesc} ${responsivenessStyles.brandDesc}`}
           >
-            Crafting thoughtful digital experiences with clean code and creative
-            design.
+            Building meaningful digital experiences with clean code, thoughtful design, and a focus on real user impact.
           </p>
           {/* Social icons */}
           <div className={`${styles.socials} ${responsivenessStyles.socials}`}>
@@ -137,7 +136,7 @@ export const Footer: React.FC = () => {
       <div className={`${styles.bottom} ${responsivenessStyles.bottom}`}>
         <p className={styles.copyright}>
           Copyright © {new Date().getFullYear()}{" "}
-          <span className={styles.copyrightName}>John Doe</span>. All Rights
+          <span className={styles.copyrightName}>Yash Balotiya</span>. All Rights
           Reserved.
         </p>
       </div>

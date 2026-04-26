@@ -1,8 +1,8 @@
 /*
  * File: src/data/Hero.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Data for the Hero section of the Portfolio application.
- * Created on: 18/03/2026
+ * Created on: 26/04/2026
  */
 
 export const heroData = {

@@ -1,9 +1,9 @@
-/*
+  /*
  * File: src/components/HomePage/ContactSection/ContactInfoPanel.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Left information panel for the Contact section.
  * Created on: 29/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 25/04/2026
  */
 import React from "react";
 import { FaEnvelope, FaLocationDot, FaPhone } from "react-icons/fa6";
@@ -37,7 +37,7 @@ export const ContactInfoPanel: React.FC = () => {
           <span className={styles.detailIcon} aria-hidden="true">
             <FaPhone />
           </span>
-          <span>+91 98765 43210</span>
+          <span>+91 9920780823</span>
         </li>
         <li className={styles.detailItem}>
           <span className={styles.detailIcon} aria-hidden="true">

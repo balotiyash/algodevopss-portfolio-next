@@ -102,8 +102,8 @@ export const experiences: Experience[] = [
   {
     id: 9,
     role: "Freelance Web Developer",
-    company: "Self-employed",
-    from: "September 2022",
+    company: "AlgoDevOpss (Self-employed)",
+    from: "September 2023",
     to: "Present",
     description:
       "Developed and deployed full-stack web applications using modern technologies. Worked on frontend and backend development, including APIs and database integration.",

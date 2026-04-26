@@ -22,7 +22,42 @@ export const awards: ResumeAward[] = [
   },
   {
     id: 2,
-    title: "Innovation in Product Experience",
+    title: "Conducted a 3-day hands-on workshop on AI/ML/DL for B.Sc. AI students at VESASC",
+    description:
+      "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
+    images: ["/portrait1.png", "/sample.png"],
+  },
+  {
+    id: 3,
+    title: "Conducted a 2-day hands-on workshop on Excel Sheets for B.Sc. AI students at VESASC",
+    description:
+      "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
+    images: ["/portrait1.png", "/sample.png"],
+  },
+  {
+    id: 4,
+    title: "Conducted a 2-day hands-on workshop on React JS for B.Sc. AI students at VESASCConducted a 2-day hands-on workshop on React JS for B.Sc. AI students at VESASC",
+    description:
+      "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
+    images: ["/portrait1.png", "/sample.png"],
+  },
+  {
+    id: 5,
+    title: "2nd Prize in Software Project Competition at VESP for VES Polytechnic App",
+    description:
+      "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
+    images: ["/portrait1.png", "/sample.png"],
+  },
+  {
+    id: 6,
+    title: "VESP – Chembur, KJSIT – Sion, PICT – Pune, RGIT – Andheri, TSEC – Bandra (Hackathon Participations)",
+    description:
+      "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
+    images: ["/portrait1.png", "/sample.png"],
+  },
+  {
+    id: 7,
+    title: "Serving ISTE – Students Chapter KJSIT as a Chairperson for the academic year 2025-26",
     description:
       "Awarded for improving user journey consistency and creating scalable design patterns across portfolio modules and resume presentation sections.",
     images: ["/portrait1.png", "/sample.png"],

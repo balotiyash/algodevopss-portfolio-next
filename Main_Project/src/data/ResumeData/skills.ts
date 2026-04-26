@@ -10,7 +10,7 @@ export const skillsData = [
     id: 1,
 
     skills: [
-      "Digital Marketing Strategy",
+      "Digital Marketing Strategy", 
       "SEO & SEM",
       "Google Analytics & SEMrush",
       "Social Media Marketing",

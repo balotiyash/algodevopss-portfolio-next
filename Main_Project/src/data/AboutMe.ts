@@ -22,13 +22,13 @@ export const aboutMeData = {
   ],
 
   skills: [
-    { label: "UX/UI Design", variant: "tagDark", pos: "tag1" },
-    { label: "Website Design", variant: "tagLight", pos: "tag2" },
-    { label: "Mobile App Design", variant: "tagLight", pos: "tag3" },
-    { label: "Design System", variant: "tagHighlight", pos: "tag4" },
-    { label: "Wireframe Design", variant: "tagLight", pos: "tag5" },
-    { label: "Dashboard", variant: "tagDark", pos: "tag6" },
-    { label: "Prototype", variant: "tagLight", pos: "tag7" },
+    { label: "Full-Stack Development", variant: "tagDark", pos: "tag1" },
+    { label: "Web Application Development", variant: "tagLight", pos: "tag2" },
+    { label: "Backend Engineering", variant: "tagLight", pos: "tag3" },
+    { label: "API Integration", variant: "tagHighlight", pos: "tag4" },
+    { label: "Database Management", variant: "tagLight", pos: "tag5" },
+    { label: "Admin Dashboards", variant: "tagDark", pos: "tag6" },
+    { label: "System Deployment", variant: "tagLight", pos: "tag7" },
   ],
 
   image: "/pngs/portrait.png",

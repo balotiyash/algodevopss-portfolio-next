@@ -41,12 +41,14 @@ export const projects: Project[] = [
     tags: ["Research Paper", "IITB"],
     image: "/projects/ijream/1.png",
     github: "https://github.com/balotiyash/",
+    live: "https://ijream.aytechinsight.com/",
   },
   {
     id: 4,
-    title: "Taxpecharcha - Tax and Articles",
+    title: "Analytical Equipment Soulutions",
     tags: ["Website", "UI/UX Design", "PHP"],
-    image: "/projects/taxpecharcha/1.png",
-    github: "https://github.com/balotiyash/taxpecharcha-php",
+    image: "/projects/aes/1.png",
+    github: "https://github.com/balotiyash/aes-frontend-pbl",
+    live: "https://www.analyticalequipmentsolutions.com/",
   },
 ];

@@ -1,9 +1,9 @@
 /*
  * File: src/components/Navbar/Navbar.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Navbar component  for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 25/04/2026
  */
 "use client";
 
@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
       >
         {/* Logo area */}
 
-        <span className={styles.logoText}>John Doe</span>
+        <span className={styles.logoText}>Yash Balotiya</span>
         {/* resume page link */}
         <Link href="/resume">
           <button className={`${styles.cta} ${responsiveStyles.cta}`}>
