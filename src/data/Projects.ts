@@ -1,8 +1,8 @@
 /*
  * File: src/data/Projects.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Project data for the Portfolio application.
- * Created on: 19/03/2026
+ * Created on: 24/04/2026
  */
 
 /* Project data for the portfolio grid */
@@ -21,30 +21,34 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Beauty Product – Ecommerce Mobile App Solution",
-    tags: ["UI/UX Design", "App Design", "Wireframe"],
-    image: "/project",
-    github: "https://github.com/example/project",
-    live: "https://project-live.com",
+    title: "Guide-MTS  -  Driving School Management System",
+    tags: ["UI/UX Design", "App Design", "Wireframe", "Electron JS"],
+    image: "/projects/guide-mts/1.png",
+    github: "https://github.com/balotiyash/guide-mts-electron",
+    // live: "https://project-live.com",
   },
   {
     id: 2,
-    title: "Landing Page Design",
-    tags: ["UI/UX Design"],
-    image: "/project2",
-    live: "https://live-only.com",
+    title: "Rupie-Finance  -  Smart Loan Processing System ",
+    tags: ["UI/UX Design", "Website", "Mobile App", "Next JS"],
+    image: "/projects/rupie-finance/1.png",
+    github: "https://github.com/balotiyash/rupie-finance-next",
+    live: "https://rupiefinance.com/",
   },
   {
     id: 3,
-    title: "Coffee App",
-    tags: ["App Design"],
-    image: "/project3",
-    github: "https://github.com/example/coffee",
+    title: "IJREAM - Research Paper",
+    tags: ["Research Paper", "IITB"],
+    image: "/projects/ijream/1.png",
+    github: "https://github.com/balotiyash/",
+    live: "https://ijream.aytechinsight.com/",
   },
   {
     id: 4,
-    title: "No Links Project",
-    tags: ["Wireframe"],
-    image: "/project4",
+    title: "Analytical Equipment Soulutions",
+    tags: ["Website", "UI/UX Design", "PHP"],
+    image: "/projects/aes/1.png",
+    github: "https://github.com/balotiyash/aes-frontend-pbl",
+    live: "https://www.analyticalequipmentsolutions.com/",
   },
 ];

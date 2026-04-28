@@ -128,6 +128,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  inset: 0px;
+  left: 15px;
+  scale: 1.5;
+  color: transparent;
+  object-position: 15% center;
 }
 
 /* Hire Badge */

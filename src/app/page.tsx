@@ -1,9 +1,9 @@
 /*
  * File: src/app/page.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Main page for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 23/03/2026
+ * Last Modified: 24/04/2026
  */
 
 import { AboutMe } from "@/components/HomePage/AboutMeSection/AboutMe";

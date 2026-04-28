@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/ContactSection/ContactForm.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Right form panel for the Contact section.
  * Created on: 29/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 25/04/2026
  */
 import React from "react";
 import styles from "./ContactForm.module.css";
@@ -43,7 +43,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           id="name"
           name="name"
           className={styles.input}
-          placeholder="Ex. John Doe"
+          placeholder="Ex. Yash Balotiya"
           value={form.name}
           onChange={handleChange}
           required

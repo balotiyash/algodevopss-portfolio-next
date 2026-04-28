@@ -1,9 +1,10 @@
 /**
  * File: src/data/ResumeData/header.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Header data for the Resume page.
- * Created on: 16/03/2026
+ * Created on: 26/04/2026
  */
+
 export interface ResumeIntro {
   name: string;
   tagline: string;
@@ -14,10 +15,10 @@ export interface ResumeIntro {
 }
 
 export const resumeIntro: ResumeIntro = {
-  name: "Michael Harris",
-  tagline: "Digital Marketing | SEO | SEM | Content Marketing",
-  location: "Sydney, Australia",
-  email: "michael.harris@email.com",
-  phone: "+61 412 345 678",
-  linkedin: "linkedin.com/in/michaelharris",
+  name: "Yash Balotiya",
+  tagline: "Software Engineer",
+  location: "Mumbai, India",
+  email: "balotiyash@algodevopss.in",
+  phone: "+91 9920780823",
+  linkedin: "https://www.linkedin.com/in/balotiyash/",
 };

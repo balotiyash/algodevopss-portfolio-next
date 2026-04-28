@@ -1,17 +1,17 @@
 /*
  * File: src/data/Hero.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Data for the Hero section of the Portfolio application.
- * Created on: 18/03/2026
+ * Created on: 26/04/2026
  */
 
 export const heroData = {
-  name: "John Doe",
-  role: "Product Designer",
+  name: "Yash Balotiya",
+  role: "Software Engineer",
   location: "India",
-  experience: "4+ years",
+  experience: "3+ years",
   description:
-    "I'm an experienced Product Designer with 4+ years in the field, collaborating with various companies and startups.",
+    "I'm an experienced Software Engineer with 3+ years in the field, collaborating with various companies and startups.",
 
   ctaPrimary: {
     text: "View My Resume",
@@ -19,7 +19,7 @@ export const heroData = {
   },
 
   image: {
-    src: "/pngs/portrait1.png",
-    alt: "John Doe - Product Designer",
+    src: "/pngs/portrait.png",
+    alt: "Yash Balotiya - Software Engineer",
   },
 };

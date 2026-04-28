@@ -10,12 +10,13 @@ import React from "react";
 import styles from "./Marquee.module.css";
 
 const skills = [
-  "App Design",
-  "Website Design",
-  "Dashboard",
-  "Wireframe",
-  "User Research",
-  "Brand Identity",
+  "Full-Stack Development",
+  "Scalable Web Apps",
+  "Database Design",
+  "End-to-End Solutions",
+  "Cloud Deployment",
+  "Chatbot Development",
+  "Business Solutions",
 ];
 
 export const Marquee: React.FC = () => {
