@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/Footer/Footer.tsx
- * Author: Harshita Gawas, Neha Balotia
+ * Author: Harshita Gawas, Neha Balotia, Yash Balotiya
  * Description: Footer component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 25/04/2026
+ * Last Modified: 13/05/2026
  */
 
 "use client";
@@ -12,6 +12,7 @@ import React from "react";
 import {
   FaEnvelope,
   FaFacebookF,
+  FaGithub,
   FaInstagram,
   FaLinkedinIn,
   FaLocationDot,
@@ -44,7 +45,7 @@ export const Footer: React.FC = () => {
       <div className={`${styles.grid} ${responsivenessStyles.grid}`}>
         {/* Col 1 — Brand */}
         <div className={`${styles.brand} ${responsivenessStyles.brand}`}>
-          <h3 className={styles.brandName}>Yash Balotiya.</h3>
+          <h3 className={styles.brandName}>Yash Balotiya</h3>
           <p
             className={`${styles.brandDesc} ${responsivenessStyles.brandDesc}`}
           >
@@ -52,20 +53,16 @@ export const Footer: React.FC = () => {
           </p>
           {/* Social icons */}
           <div className={`${styles.socials} ${responsivenessStyles.socials}`}>
-            <a href="#" aria-label="Facebook" className={styles.socialIcon}>
-              <FaFacebookF aria-hidden="true" />
-            </a>
-            <a href="#" aria-label="LinkedIn" className={styles.socialIcon}>
+            <a href="https://www.linkedin.com/in/balotiyash/" aria-label="LinkedIn" className={styles.socialIcon}>
               <FaLinkedinIn aria-hidden="true" />
             </a>
-            <a
-              href="https://x.com/"
-              aria-label="Twitter"
-              className={styles.socialIcon}
-            >
-              <FaXTwitter aria-hidden="true" />
+            <a href="https://github.com/balotiyash" aria-label="GitHub" className={styles.socialIcon}>
+              <FaGithub aria-hidden="true" />
             </a>
-            <a href="#" aria-label="Instagram" className={styles.socialIcon}>
+            <a href="https://www.facebook.com/yash.balotiya.2025/" aria-label="Facebook" className={styles.socialIcon}>
+              <FaFacebookF aria-hidden="true" />
+            </a>
+            <a href="https://www.instagram.com/bella_ciao_adios/" aria-label="Instagram" className={styles.socialIcon}>
               <FaInstagram aria-hidden="true" />
             </a>
           </div>

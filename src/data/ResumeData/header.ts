@@ -1,8 +1,8 @@
 /**
  * File: src/data/ResumeData/header.ts
- * Author: Harshita Gawas, Neha Balotia
+ * Author: Harshita Gawas, Neha Balotia, Yash Balotiya
  * Description: Header data for the Resume page.
- * Created on: 26/04/2026
+ * Created on: 13/05/2026
  */
 
 export interface ResumeIntro {
@@ -12,13 +12,15 @@ export interface ResumeIntro {
   email: string;
   phone: string;
   linkedin: string;
+  github: string;
 }
 
 export const resumeIntro: ResumeIntro = {
   name: "Yash Balotiya",
   tagline: "Software Engineer",
-  location: "Mumbai, India",
-  email: "balotiyash@algodevopss.in",
+  location: "Chembur, Mumbai, India",
+  email: "balotiyash@gmail.com",
   phone: "+91 9920780823",
-  linkedin: "https://www.linkedin.com/in/balotiyash/",
+  linkedin: "linkedin.com/in/balotiyash",
+  github: "github.com/balotiyash",
 };

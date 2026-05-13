@@ -1,9 +1,9 @@
 /**
  * File: src/components/ResumePage/Header/Header.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Yash Balotiya
  * Description: Header component for the Resume page.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 13/05/2026
  */
 
 /* Resume intro/header — ATS-friendly black & white styling */
@@ -18,9 +18,10 @@ export const Header: React.FC = () => {
   const email = resumeIntro.email?.trim();
   const phone = resumeIntro.phone?.trim();
   const linkedin = resumeIntro.linkedin?.trim();
+  const github = resumeIntro.github?.trim();
 
   const hasAnyContent = Boolean(
-    name || tagline || location || email || phone || linkedin,
+    name || tagline || location || email || phone || linkedin || github,
   );
 
   if (!hasAnyContent) {
@@ -55,6 +56,18 @@ export const Header: React.FC = () => {
         rel="noreferrer"
       >
         {linkedin}
+      </a>,
+    );
+  }
+  if (github) {
+    contactItems.push(
+      <a
+        key="github"
+        href={`https://${github}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {github}
       </a>,
     );
   }

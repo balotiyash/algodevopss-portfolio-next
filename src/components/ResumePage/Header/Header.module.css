@@ -1,16 +1,16 @@
 /** 
  * File: src/components/ResumePage/Header/Header.module.css
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Yash Balotiya
  * Description: Header component styles for the Resume page.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 13/05/2026
 */
 
 /* ─── Resume Header — ATS black & white ─── */
 .header {
   text-align: center;
   padding-bottom: clamp(16px, 3vw, 28px);
-  border-bottom: 2px solid #000;
+  /* border-bottom: 2px solid #000; */
   margin-bottom: clamp(20px, 3vw, 32px);
 }
 

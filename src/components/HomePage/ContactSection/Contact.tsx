@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/ContactSection/Contact.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Yash Balotiya
  * Description: Contact section component of the Portfolio application.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 13/05/2026
  */
 "use client";
 import React, { useState } from "react";
@@ -41,6 +41,24 @@ export const Contact: React.FC = () => {
     e.preventDefault();
 
     const { name, email, phone, message } = form;
+
+    // Validation (basic)
+    if (!name || !email || !message) {
+      alert("Please fill in all required fields (Name, Email, Message).");
+      return;
+    }
+
+    // Name without numbers/special chars
+    if (!/^[a-zA-Z\s]+$/.test(name)) {
+      alert("Name can only contain letters and spaces.");
+      return;
+    }
+
+    // Indian phone number validation (10 digits, optional country code)
+    if (phone && !/^(\+91[\-\s]?)?[0]?[6789]\d{9}$/.test(phone)) {
+      alert("Please enter a valid Indian phone number.");
+      return;
+    }
 
     const subject = encodeURIComponent(`New Contact from ${name}`);
     const body = encodeURIComponent(

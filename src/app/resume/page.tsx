@@ -1,9 +1,9 @@
 /*
- * File: src/app/projects/page.tsx
- * Author: Harshita Gawas
- * Description: Page content for the Projects page.
+ * File: src/app/resume/page.tsx
+ * Author: Harshita Gawas, Yash Balotiya
+ * Description: Page content for the Resume page.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 13/05/2026
  */
 
 "use client";
@@ -44,16 +44,6 @@ const Resume: React.FC = () => {
           />
         </div>
 
-        {/* ─── Experience ─── */}
-        <div className={styles.resumeBlock}>
-          <DynamicSection title="Experience" data={workExperience} />
-        </div>
-
-        {/* ─── Projects ─── */}
-        <div className={styles.resumeBlock}>
-          <DynamicSection title="Projects" data={projects} />
-        </div>
-
         {/* ─── Education ─── */}
         <div className={styles.resumeBlock}>
           <DynamicSection title="Education" data={education} />
@@ -64,8 +54,18 @@ const Resume: React.FC = () => {
           <DynamicSection
             title="Skills"
             data={skillsData}
-            collapsible={false}
+            collapsible={true}
           />
+        </div>
+
+        {/* ─── Experience ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Experience" data={workExperience} />
+        </div>
+
+        {/* ─── Projects ─── */}
+        <div className={styles.resumeBlock}>
+          <DynamicSection title="Projects" data={projects} />
         </div>
 
         {/* ─── Certifications ─── */}

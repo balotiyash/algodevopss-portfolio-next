@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/ExperienceSection/ExperienceCard.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Yash Balotiya
  * Description: Experience section Card component of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 31/03/2026
+ * Modified on: 13/05/2026
  */
 
 import React from "react";
@@ -29,10 +29,16 @@ export const ExperienceItemCard: React.FC<ExperienceItemCardProps> = ({
       <span className={styles.cardTypeIcon} aria-hidden="true">
         {item.type === "education" ? <FaGraduationCap /> : <FaBriefcase />}
       </span>
+      
       {/* Card content */}
       <h3 className={styles.role}>{item.role}</h3>
+      
       {/* Company name */}
       <p className={styles.company}>{item.company}</p>
+
+      {/* Location */}
+      <p>📍 {item.location}</p>
+
       {/* Description */}
       <p className={styles.desc}>{item.description}</p>
     </div>
