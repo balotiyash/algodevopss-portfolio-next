@@ -19,7 +19,8 @@ export const heroData = {
   },
 
   image: {
-    src: "/pngs/portrait.png",
+    src: "/portraits/yash1.png",
     alt: "Yash Balotiya - Software Engineer",
   },
 };
+

@@ -3,7 +3,7 @@
  * Author: Harshita Gawas, Neha Balotia
  * Description: Data for the About Me section of the Portfolio application.
  * Created on: 18/03/2026
- * Last Modified: 24/04/2026
+ * Last Modified: 19/05/2026
  */
 
 export const aboutMeData = {
@@ -31,5 +31,5 @@ export const aboutMeData = {
     { label: "System Deployment", variant: "tagLight", pos: "tag7" },
   ],
 
-  image: "/pngs/portrait.png",
+  image: "/portraits/yash4.png",
 };

@@ -1,9 +1,9 @@
 /*
  * File: src/components/SideIcons/SideIcons.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Side icons compoenent of the Portfolio application.
  * Created on: 19/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 20/05/2026
  */
 "use client";
 
@@ -52,27 +52,59 @@ export const SideIcons: React.FC = () => {
   }, []);
 
   /* Track active section based on viewport visibility */
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.2,
-        rootMargin: "0px 0px -60% 0px",
-      },
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setActiveId(entry.target.id);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.2,
+  //       rootMargin: "0px 0px -60% 0px",
+  //     },
+  //   );
 
-    sections.forEach((section) => {
-      const el = document.getElementById(section.id);
-      if (el) observer.observe(el);
+  //   sections.forEach((section) => {
+  //     const el = document.getElementById(section.id);
+  //     if (el) observer.observe(el);
+  //   });
+
+  //   return () => observer.disconnect();
+  // }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      for (const section of sections) {
+        const el = document.getElementById(section.id);
+
+        if (!el) continue;
+
+        const top = el.offsetTop;
+        const bottom = top + el.offsetHeight;
+
+        if (
+          scrollPosition >= top &&
+          scrollPosition < bottom
+        ) {
+          setActiveId(section.id);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
     });
 
-    return () => observer.disconnect();
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   /* Smooth-scroll to section on click */

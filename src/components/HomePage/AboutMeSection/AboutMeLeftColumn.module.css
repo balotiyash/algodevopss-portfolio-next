@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/AboutMeSection/AboutMe.module.css
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: About Me section and about me left column styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 31/03/2026
+ * Last Modified: 19/05/2026
  */
 
 /* ─── About Me Section ─── */
@@ -48,10 +48,11 @@
 }
 /* image to display on circle */
 .circle img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top center;
+  /* scale: 0.95; */
+  background-color: transparent;
 }
 
 /* ─── Floating skill tags around the image ─── */

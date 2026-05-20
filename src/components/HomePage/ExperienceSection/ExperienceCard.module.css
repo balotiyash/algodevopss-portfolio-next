@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/ExperienceSection/ExperienceCard.module.css
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Experience section Card styles of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 31/03/2026
+ * Modified on: 19/05/2026
  */
 
 /* Experience card */
@@ -13,7 +13,8 @@
   background: var(--section-background);
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  padding: clamp(20px, 3vw, 32px);
+  /* padding: clamp(20px, 3vw, 32px); */
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -64,11 +65,13 @@
 
 /* Company name */
 .company {
+  margin: 0px;
   color: var(--highlight);
 }
 
 /* Description text */
 .desc {
+  margin: 0px;
   font-size: 0.9rem;
   opacity: 0.85;
 }

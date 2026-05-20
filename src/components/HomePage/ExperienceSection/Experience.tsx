@@ -1,9 +1,9 @@
 /*
  * File: src/components/HomePage/ExperienceSection/Experience.tsx
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Experience section component of the Portfolio application.
  * Created on: 19/03/2026
- * Modified on: 31/03/2026
+ * Modified on: 20/05/2026
  */
 
 "use client"; // ensures this component runs on client-side (needed for scroll + DOM APIs)
