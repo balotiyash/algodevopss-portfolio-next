@@ -1,9 +1,9 @@
 /**
  * File: src/components/ResumePage/DynamicSection/helpers.ts
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Dynamic section component helpers for the Resume page.
  * Created on: 20/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 21/05/2026
  */
 
 const HEADER_TITLE_KEYS = ["title", "degree", "role", "name"] as const;
@@ -20,7 +20,7 @@ export const HEADER_KEYS = new Set([
 ]);
 
 export const MEDIA_KEYS = new Set([
-  "images",
+  "images", 
   "image",
   "certificates",
   "certificate",
@@ -58,15 +58,33 @@ export const getHeaderValues = (item: Record<string, unknown>) => {
   const location = getString(item.location);
 
   const subtitle = [organization, location].filter(Boolean).join(", ") || null;
+  // const timeline = getFirstString(item, META_KEYS);
+  // const from = getString(item.from);
+  // const to = getString(item.to);
+  // const range = from || to ? [from, to].filter(Boolean).join(" - ") : null;
+
+  // return {
+  //   mainTitle,
+  //   subtitle,
+  //   meta: timeline || range,
+  // };
+
   const timeline = getFirstString(item, META_KEYS);
   const from = getString(item.from);
   const to = getString(item.to);
-  const range = from || to ? [from, to].filter(Boolean).join(" - ") : null;
+
+  const range =
+    from || to
+      ? `${from ?? ""} - ${to ?? (timeline === "Pursuing" ? "Present" : "")}`
+      : null;
+
+  const meta =
+    timeline && range ? `${timeline} | ${range}` : timeline || range;
 
   return {
     mainTitle,
     subtitle,
-    meta: timeline || range,
+    meta,
   };
 };
 

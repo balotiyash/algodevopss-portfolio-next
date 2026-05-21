@@ -3,8 +3,9 @@
  * Author: Harshita Gawas, Neha Balotia
  * Description: Side icons compoenent of the Portfolio application.
  * Created on: 19/03/2026
- * Last Modified: 20/05/2026
+ * Last Modified: 21/05/2026
  */
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -52,29 +53,6 @@ export const SideIcons: React.FC = () => {
   }, []);
 
   /* Track active section based on viewport visibility */
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           setActiveId(entry.target.id);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.2,
-  //       rootMargin: "0px 0px -60% 0px",
-  //     },
-  //   );
-
-  //   sections.forEach((section) => {
-  //     const el = document.getElementById(section.id);
-  //     if (el) observer.observe(el);
-  //   });
-
-  //   return () => observer.disconnect();
-  // }, []);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -109,7 +87,7 @@ export const SideIcons: React.FC = () => {
 
   /* Smooth-scroll to section on click */
   const handleClick = (id: string) => {
-    setActiveId(id);
+    // setActiveId(id);
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });

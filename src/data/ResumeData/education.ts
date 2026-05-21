@@ -47,8 +47,8 @@ export const education: ResumeEducation[] = [
         // certificate: "/Portfolio.pdf",
       },
       {
-        label: "4th Semester",
-        score: "9.64 SGPI",
+        label: "5th Semester",
+        score: "9.64 SGPI", 
         // certificate: "/Portfolio.pdf",
       },
     ],

@@ -1,9 +1,9 @@
 /** 
  * File: src/components/ResumePage/DynamicSection/MediaCard.module.css
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Media layout styles for images and file cards.
  * Created on: 29/03/2026
- * Last Modified: 29/03/2026
+ * Last Modified: 21/05/2026
  */
 
 /* Purpose: Styles media presentation, including image previews and link cards, with responsive grid behavior. */
@@ -21,8 +21,8 @@
 /* Image styling */
 .image {
   width: 400px;
-  height: 300px;
-  object-fit: cover;
+  /* height: 300px; */
+  /* object-fit: cover; */
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   background: #fff;
