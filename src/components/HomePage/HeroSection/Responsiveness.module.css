@@ -1,14 +1,23 @@
 /*
  * File: src/components/HomePage/HeroSection/Responsiveness.module.css
- * Author: Harshita Gawas
+ * Author: Harshita Gawas, Neha Balotia
  * Description: Hero section responsiveness styles for the Portfolio application.
  * Created on: 15/03/2026
- * Last Modified: 21/03/2026
+ * Last Modified: 28/05/2026
  */
 
 /* ================= RESPONSIVE ================= */
+@media (max-width: 1070px) {
+  .hireBadge {
+    width: 70px;
+    height: 70px;
+    right: 10%;
+    top: 0%;
+    z-index: 20;
+  }
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
   .container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -32,9 +41,23 @@
     min-height: 400px;
   }
 
+  .portraitWrapper {
+    right: 0%;
+  }
+
   .purpleCircle {
     width: 280px;
     height: 280px;
+    transform: translate(-50%, -80%);
+    scale: 1.3;
+  }
+
+  .hireBadge {
+    width: 70px;
+    height: 70px;
+    right: 20%;
+    top: 10%;
+    z-index: 20;
   }
 }
 
@@ -54,6 +77,47 @@
   }
 }
 
+@media (max-width: 770px) {
+  .portraitWrapper {
+    height: 280px;
+    width: 320px;
+    right: 0%;
+  }
+
+  .hireBadge {
+    width: 70px;
+    height: 70px;
+    right: 15%;
+    top: 10%;
+    z-index: 20;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .portraitWrapper {
+    height: 250px;
+    width: 250px;
+    right: 0%;
+  }
+
+  .hireBadge {
+    width: 70px;
+    height: 70px;
+    right: 15%;
+    top: 10%;
+    z-index: 20;
+  }
+
+  .purpleCircle {
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%, -80%);
+    scale: 1.1;
+  }
+
+}
+
 @media (max-width: 640px) {
   .title {
     font-size: 2rem;
@@ -64,8 +128,9 @@
   }
 
   .purpleCircle {
-    width: 220px;
-    height: 220px;
+    width: 265px;
+    height: 265px;
+    transform: translate(-45%, -75%);
   }
 
   .actions {
@@ -73,10 +138,52 @@
   }
 
   .portraitWrapper {
-    width: 300px;
-    height: 380px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .hireBadge {
+    width: 60px;
+    height: 60px;
+    right: 10%;
+    top: 10%;
+    z-index: 20;
   }
 }
+
+@media (max-width: 550px) {
+  .portraitWrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .purpleCircle {
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%, -75%);
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .portraitWrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .purpleCircle {
+    width: 220px;
+    height: 220px;
+    transform: translate(-50%, -80%);
+  }
+
+  .hireBadge {
+    right: 8%;
+    top: 10%;
+  }
+  
+}
+
 
 @media (max-width: 430px) {
   .heroSection {
@@ -122,21 +229,22 @@
   }
 
   .portraitWrapper {
-    width: 200px;
-    height: 260px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
   }
 
   .purpleCircle {
-    width: 180px;
-    height: 180px;
-    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -60%);
   }
 
   .hireBadge {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     right: 5%;
-    top: 10%;
+    top: 0%;
   }
 
   .hireBadgeInner {

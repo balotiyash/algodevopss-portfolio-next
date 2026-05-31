@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
           {/* Background circle */}
           <div
             className={`${styles.purpleCircle} ${responsiveStyles.purpleCircle}`}
-          />
+          /> 
 
           {/* Rotating badge */}
           <Link
