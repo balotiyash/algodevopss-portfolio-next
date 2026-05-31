@@ -3,7 +3,7 @@
  * Author: Harshita Gawas, Neha Balotia, Yash Balotiya
  * Description: Experience data for the Resume page.
  * Created on: 26/04/2026
- * Last modified: 13/05/2026
+ * Last modified: 27/05/2026
  */
 
 export interface ResumeExperience {
@@ -40,7 +40,7 @@ export const workExperience: ResumeExperience[] = [
     // images: [],
     // certificates: [],
     // period: "",
-    manager: ["Founder: Mr. Yash Balotiya", "Co-Founder: Mr. Ganesh Gupta"],
+    manager: ["Founder: Mr. Yash Balotiya"],
   },
   {
     id: 2,
