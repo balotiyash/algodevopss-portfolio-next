@@ -3,7 +3,7 @@
  * Author: Harshita Gawas, Yash Balotiya
  * Description: Page content for the Resume page.
  * Created on: 20/03/2026
- * Last Modified: 13/05/2026
+ * Last Modified: 01/06/2026
  */
 
 "use client";
@@ -75,7 +75,7 @@ const Resume: React.FC = () => {
 
         {/* ─── Awards ─── */}
         <div className={styles.resumeBlock}>
-          <DynamicSection title="Awards" data={awards} />
+          <DynamicSection title="Awards and Achievements" data={awards} />
         </div>
       </div>
     </main>
