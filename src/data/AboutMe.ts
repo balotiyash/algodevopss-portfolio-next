@@ -11,7 +11,7 @@ export const aboutMeData = {
   title: "Software Engineer",
 
   description: [
-    "Yash Balotiya is a creative Software Engineer with a passion for crafting intuitive and visually engaging digital experiences. She specializes in transforming complex ideas into user-friendly designs that not only look beautiful but also solve real problems.",
+    "Yash Balotiya is a creative Software Engineer with a passion for crafting intuitive and visually engaging digital experiences. He specializes in transforming complex ideas into user-friendly designs that not only look beautiful but also solve real problems.",
     "With over 3 years of experience across multiple industries, Yash has worked on everything from mobile applications to large-scale web platforms. His approach combines research, strategy, and design systems to deliver consistent and impactful results.",
   ],
 
